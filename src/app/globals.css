@@ -1,0 +1,46 @@
+/* Base do design (design/Ecosflow.dc.html). As fontes chegam pelo next/font
+   como --font-sans e --font-serif, servidas pelo próprio site. */
+:root {
+  --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+  --accent: #B8401C;
+  --amber: #E8A33D;
+  --paper: #F6F2E8;
+  --paper2: #EDE7D8;
+  --card: #FCFAF3;
+  --ink: #0F1A15;
+  --muted: #4A564E;
+  --pine: #0C2A20;
+  --bone: #E4E1CE;
+  --line: rgba(15, 26, 21, 0.14);
+}
+
+html { background: #07120F; }
+body { margin: 0; background: #07120F; color: #0F1A15; font-family: var(--font-sans), system-ui, sans-serif; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+a { color: #B8401C; text-decoration: none; }
+a:hover { color: #9B3517; }
+input, select, button, textarea { font-family: inherit; }
+::placeholder { color: #8C968D; opacity: 1; }
+::selection { background: #B8401C; color: #F6F2E8; }
+@keyframes revealUp { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: none; } }
+@keyframes revealSoft { from { opacity: 0; } to { opacity: 1; } }
+@keyframes radarRing { 0% { transform: scale(0.18); opacity: 0.8; } 100% { transform: scale(1); opacity: 0; } }
+@keyframes radarSweep { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+@keyframes softBlink { 0%, 100% { opacity: 1; } 50% { opacity: 0.18; } }
+@keyframes spinSlow { to { transform: rotate(360deg); } }
+@keyframes spinBack { to { transform: rotate(-360deg); } }
+@keyframes bubbleIn { from { opacity: 0; transform: translateY(10px) scale(0.98); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { * { animation-duration: 0.001s !important; animation-iteration-count: 1 !important; transition-duration: 0.001s !important; } }
+
+/* Estados de passar o mouse e de foco do design. Os estilos do design são
+   inline, então estas regras precisam de !important para vencer. */
+.hv-1:hover { color: #FFFDEB !important; }
+.hv-2:hover { background: #9B3517 !important; color: #F6F2E8 !important; }
+.hv-3:hover { gap: 18px !important; background: #FFFDEB !important; color: #0F1A15 !important; }
+.hv-4:hover { gap: 14px !important; color: #FFFDEB !important; }
+.hv-5:hover { border-color: #E4E1CE !important; background: rgba(228, 225, 206, 0.08) !important; }
+.hv-6:hover { background: #9B3517 !important; }
+.hv-7:hover { background: var(--ink) !important; color: var(--paper) !important; }
+.hv-8:hover { background: #FFFDEB !important; color: #0F1A15 !important; }
+.hv-9:hover { background: #9B3517 !important; gap: 18px !important; }
+.hv-10:hover { color: #F1EEE0 !important; }
+.fc-1:focus { outline: none !important; border-color: var(--pine) !important; box-shadow: 0 0 0 4px rgba(12, 42, 32, 0.1) !important; }

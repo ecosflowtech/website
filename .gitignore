@@ -1,0 +1,11 @@
+node_modules/
+.next/
+out/
+build/
+next-env.d.ts
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+# Cópia antiga do vídeo que veio com o export do design.
+design/_backup/

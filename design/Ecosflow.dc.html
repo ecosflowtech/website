@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Ecosflow é uma casa de software que constrói inteligência artificial para o lado comercial e administrativo do escritório de advocacia. O primeiro produto é o Ecos CRM.">
+<title>Ecosflow — a IA que cuida do negócio ao redor do Direito</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet">
+<style>
+html { background: #07120F; }
+body { margin: 0; background: #07120F; color: #0F1A15; font-family: 'Manrope', system-ui, sans-serif; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+a { color: #B8401C; text-decoration: none; }
+a:hover { color: #9B3517; }
+input, select, button, textarea { font-family: inherit; }
+::placeholder { color: #8C968D; opacity: 1; }
+::selection { background: #B8401C; color: #F6F2E8; }
+@keyframes revealUp { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: none; } }
+@keyframes revealSoft { from { opacity: 0; } to { opacity: 1; } }
+@keyframes radarRing { 0% { transform: scale(0.18); opacity: 0.8; } 100% { transform: scale(1); opacity: 0; } }
+@keyframes radarSweep { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+@keyframes softBlink { 0%, 100% { opacity: 1; } 50% { opacity: 0.18; } }
+@keyframes spinSlow { to { transform: rotate(360deg); } }
+@keyframes spinBack { to { transform: rotate(-360deg); } }
+@keyframes bubbleIn { from { opacity: 0; transform: translateY(10px) scale(0.98); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { * { animation-duration: 0.001s !important; animation-iteration-count: 1 !important; transition-duration: 0.001s !important; } }
+</style>
+</helmet>
+<div data-root style="--accent:#B8401C; --amber:#E8A33D; --paper:#F6F2E8; --paper2:#EDE7D8; --card:#FCFAF3; --ink:#0F1A15; --muted:#4A564E; --pine:#0C2A20; --bone:#E4E1CE; --line:rgba(15,26,21,0.14); background:#F6F2E8; color:#0F1A15; overflow-x:clip; font-size:16px; line-height:1.6;">
+
+  <header style="position:fixed; top:0; left:0; right:0; z-index:80; display:flex; justify-content:center; padding:14px clamp(12px,3vw,24px); pointer-events:none;">
+    <nav aria-label="Principal" style="pointer-events:auto; display:flex; align-items:center; gap:clamp(10px,2vw,28px); background:rgba(7,18,15,0.9); backdrop-filter:blur(12px); border:1px solid rgba(228,225,206,0.12); border-radius:999px; padding:9px 9px 9px 20px; max-width:100%; overflow:auto;">
+      <a href="#topo" style="display:flex; align-items:center; gap:9px; color:#E4E1CE; flex:none;" style-hover="color:#FFFDEB;">
+        <img src="./logo-mark.png" alt="" aria-hidden="true" style="width:26px; height:26px; object-fit:contain; filter:invert(1); flex:none;">
+        <span style="font-size:15px; font-weight:300; letter-spacing:0.14em;">ecosflow</span>
+      </a>
+      <span aria-hidden="true" style="width:1px; height:18px; background:rgba(228,225,206,0.18); flex:none;"></span>
+      <a href="#casa" style="font-size:12.5px; font-weight:600; color:rgba(228,225,206,0.72); white-space:nowrap; flex:none;" style-hover="color:#FFFDEB;">A casa</a>
+      <a href="#crm" style="font-size:12.5px; font-weight:600; color:rgba(228,225,206,0.72); white-space:nowrap; flex:none;" style-hover="color:#FFFDEB;">Ecos CRM</a>
+      <a href="#demo" style="font-size:12.5px; font-weight:600; color:rgba(228,225,206,0.72); white-space:nowrap; flex:none;" style-hover="color:#FFFDEB;">O agente</a>
+      <a href="#regras" style="font-size:12.5px; font-weight:600; color:rgba(228,225,206,0.72); white-space:nowrap; flex:none;" style-hover="color:#FFFDEB;">Regras</a>
+      <a href="#planos" style="font-size:12.5px; font-weight:600; color:rgba(228,225,206,0.72); white-space:nowrap; flex:none;" style-hover="color:#FFFDEB;">Planos</a>
+      <a href="#workshop" style="flex:none; background:var(--accent); color:#F6F2E8; border-radius:999px; padding:10px 18px; font-size:12.5px; font-weight:700; white-space:nowrap; transition:background 0.3s;" style-hover="background:#9B3517; color:#F6F2E8;">Lista do workshop</a>
+    </nav>
+  </header>
+
+  <main>
+    <div data-cine id="topo" style="position:relative;">
+      <div data-cine-stage style="position:sticky; top:0;">
+
+        <section data-scene="1" data-screen-label="Hero" style="position:relative; min-height:100svh; box-sizing:border-box; padding:clamp(10px,1.4vw,18px); background:#07120F;">
+          <div data-hero-panel style="position:relative; width:100%; height:100%; min-height:min(940px,calc(100svh - 24px)); border-radius:clamp(16px,2.2vw,28px); overflow:hidden; background:#0A1713; border:1px solid rgba(228,225,206,0.08); display:flex; flex-direction:column; justify-content:flex-end;">
+            <div data-glow aria-hidden="true" style="position:absolute; inset:-14% -4%; pointer-events:none; background:radial-gradient(120% 90% at 78% 8%, #17382A 0%, #0C2318 44%, #07120F 100%);"></div>
+            <div aria-hidden="true" style="position:absolute; inset:0; pointer-events:none; opacity:0.5; background-image:radial-gradient(rgba(228,225,206,0.16) 1px, transparent 1px); background-size:30px 30px;"></div>
+            <video data-hero-video src="./video1.mp4" autoplay muted loop playsinline preload="auto" aria-hidden="true" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0.55; pointer-events:none;"></video>
+            <div aria-hidden="true" style="position:absolute; inset:0; pointer-events:none; background:linear-gradient(180deg, rgba(7,18,15,0.82) 0%, rgba(7,18,15,0.42) 38%, rgba(7,18,15,0.92) 100%);"></div>
+
+            <div style="position:relative; flex:1; min-height:0; padding:clamp(78px,10vh,130px) clamp(20px,4vw,56px) clamp(20px,2.6vw,38px); display:flex; flex-direction:column; justify-content:flex-end; gap:clamp(20px,4vh,52px); overflow:hidden;">
+              <div style="display:flex; flex-wrap:wrap; gap:clamp(20px,3.4vw,64px); align-items:flex-end;">
+                <div data-hero-side style="flex:1 1 340px; min-width:0; display:flex; flex-direction:column; gap:20px;">
+                  <p style="margin:0; font-size:11px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--amber); animation:revealSoft 0.8s ease both;">Casa de software · IA para a operação do escritório</p>
+                  <h1 style="margin:0; font-weight:300; font-size:min(clamp(28px,3.5vw,56px), 7.4vh); line-height:1.1; letter-spacing:-0.025em; color:#F1EEE0; max-width:19ch; text-wrap:pretty; animation:revealUp 1s cubic-bezier(0.19,0.7,0.16,1) both;">O escritório não perde cliente por falta de competência.<span style="display:block; font-family:'Instrument Serif',Georgia,serif; font-style:italic; font-weight:400; font-size:1.06em; color:#FFFDEB; margin-top:0.18em;">Perde por falta de tempo de responder.</span></h1>
+                </div>
+                <div data-hero-side style="flex:1 1 300px; min-width:min(100%,280px); max-width:420px; display:flex; flex-direction:column; gap:18px; padding-bottom:6px; animation:revealUp 1s cubic-bezier(0.19,0.7,0.16,1) 0.2s both;">
+                  <p style="margin:0; color:#BFC7BC; font-size:clamp(14px,1.1vw,16px); line-height:1.65; text-wrap:pretty;">A Ecosflow constrói a inteligência artificial que opera o lado comercial do escritório: qualifica, acompanha, recupera e conduz até o contrato. Fora da atividade privativa da advocacia, por desenho.</p>
+                  <div style="display:flex; flex-wrap:wrap; gap:12px; align-items:center;">
+                    <a href="#workshop" style="display:inline-flex; align-items:center; gap:12px; background:#E7E3D3; color:#0F1A15; border-radius:999px; padding:7px 7px 7px 22px; font-size:14px; font-weight:700; transition:gap 0.35s cubic-bezier(0.22,1,0.36,1), background 0.3s;" style-hover="gap:18px; background:#FFFDEB; color:#0F1A15;">Entrar na lista do workshop<span aria-hidden="true" style="width:36px; height:36px; border-radius:50%; background:var(--accent); color:#F6F2E8; display:grid; place-items:center; font-size:15px;">→</span></a>
+                  </div>
+                  <div style="display:flex; flex-wrap:wrap; gap:8px;">
+                    <span style="border:1px solid rgba(228,225,206,0.22); border-radius:999px; padding:6px 13px; font-size:11.5px; font-weight:600; color:#BFC7BC;">Em produção num escritório real</span>
+                    <span style="border:1px solid rgba(228,225,206,0.22); border-radius:999px; padding:6px 13px; font-size:11.5px; font-weight:600; color:#BFC7BC;">Supervisão humana por padrão</span>
+                  </div>
+                </div>
+              </div>
+
+              <div data-wordmark aria-hidden="true" style="display:flex; align-items:center; gap:clamp(14px,2.2vw,34px); border-top:1px solid rgba(228,225,206,0.14); padding-top:clamp(14px,2.2vw,24px);">
+                <img src="./logo-mark.png" alt="" style="width:min(clamp(44px,6.8vw,112px), 13vh); height:auto; object-fit:contain; filter:invert(1); flex:none; opacity:0.95;">
+                <span style="position:relative; display:block; flex:1; min-width:0;">
+                  <span data-wm-outline style="display:block; font-weight:200; font-size:min(clamp(38px,11.4vw,180px), 21vh); line-height:0.78; letter-spacing:0.02em; color:transparent; white-space:nowrap; -webkit-text-stroke:1.3px rgba(241,238,224,0.45);">ecosflow</span>
+                  <span data-wm-solid style="position:absolute; left:0; top:0; display:block; font-weight:200; font-size:min(clamp(38px,11.4vw,180px), 21vh); line-height:0.78; letter-spacing:0.02em; color:#F1EEE0; white-space:nowrap;">ecosflow</span>
+                </span>
+              </div>
+            </div>
+            <div data-dim1 aria-hidden="true" style="position:absolute; inset:0; background:#07120F; opacity:0; pointer-events:none;"></div>
+          </div>
+        </section>
+
+        <section data-scene="2" id="contexto" data-screen-label="Contexto" style="position:relative; min-height:100svh; box-sizing:border-box; background:#07120F; display:flex; align-items:center; justify-content:center; padding:clamp(70px,10vh,120px) clamp(16px,4vw,64px);">
+          <div data-m-card style="max-width:1100px; width:100%; background:#0C1A15; border:1px solid rgba(228,225,206,0.07); border-radius:26px; padding:clamp(36px,7vh,96px) clamp(22px,5vw,80px); text-align:center; display:flex; flex-direction:column; align-items:center; gap:clamp(20px,3.4vh,40px); box-shadow:0 60px 120px -60px rgba(0,0,0,0.9);">
+            <p data-m-label style="margin:0; font-size:11px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:#8A968B;">( o contexto )</p>
+            <h2 data-m-title style="margin:0; max-width:900px; font-weight:300; font-size:clamp(26px,3.9vw,58px); line-height:1.08; letter-spacing:-0.02em; color:#F1EEE0; text-wrap:pretty;">Todo escritório tem um funil comercial.<span style="display:block; font-family:'Instrument Serif',Georgia,serif; font-style:italic; font-weight:400; font-size:1.05em; color:#FFFDEB;">Quase nenhum consegue enxergar o dele.</span></h2>
+            <p data-m-text style="margin:0; max-width:660px; color:#BFC7BC; font-size:clamp(14px,1.15vw,17px); line-height:1.75; font-weight:300; text-wrap:pretty;">Entre a primeira mensagem no WhatsApp e o contrato assinado existe uma fila de tarefas que ninguém registrou: responder, entender o caso, decidir se vale, marcar a reunião, cobrar o documento, lembrar do pagamento. Quando o escritório está cheio, é essa fila que trava — e o cliente que já tinha escolhido você desiste no silêncio.</p>
+          </div>
+          <div data-dim2 aria-hidden="true" style="position:absolute; inset:0; background:#07120F; opacity:0; pointer-events:none;"></div>
+        </section>
+
+        <section data-scene="3" id="escala" data-screen-label="Escala" style="position:relative; min-height:100svh; box-sizing:border-box; background:#07120F; color:var(--bone); display:flex; align-items:center; padding:clamp(50px,8vh,110px) clamp(20px,4.5vw,64px); overflow:hidden;">
+          <div data-n-inner style="max-width:1360px; margin:0 auto; width:100%;">
+            <p data-n-label style="margin:0 0 clamp(16px,2.8vh,42px); font-size:11px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:#8A968B;">( a brecha )</p>
+            <div style="border-bottom:1px solid rgba(228,225,206,0.14);">
+              <div data-stat-row style="border-top:1px solid rgba(228,225,206,0.14); padding:clamp(16px,3vh,46px) 0; display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:14px 48px;">
+                <div style="display:flex; align-items:baseline; gap:11px; min-width:0;"><span data-count data-to="77" style="font-size:min(clamp(56px,8.6vw,158px), 13.5vh); font-weight:800; line-height:0.9; letter-spacing:-0.04em; color:#F1EEE0;">77</span><span style="font-size:clamp(20px,2.3vw,40px); font-weight:700; color:#8A968B;">%</span></div>
+                <p style="margin:0; max-width:420px; color:#A8B2A6; font-size:clamp(13px,1.05vw,16px); line-height:1.6; text-wrap:pretty;">dos advogados acreditam que a IA vai assumir tarefas de marketing — <span style="color:var(--amber); font-weight:700;">só 27% de fato usam</span>. O comprador não precisa ser convencido de que IA serve, e sim de que esta funciona.</p>
+              </div>
+              <div data-stat-row style="border-top:1px solid rgba(228,225,206,0.14); padding:clamp(16px,3vh,46px) 0; display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:14px 48px;">
+                <div style="display:flex; align-items:baseline; gap:11px; min-width:0;"><span style="font-size:clamp(16px,1.6vw,26px); font-weight:700; color:#8A968B;">~</span><span data-count data-to="90" style="font-size:min(clamp(56px,8.6vw,158px), 13.5vh); font-weight:800; line-height:0.9; letter-spacing:-0.04em; color:#F1EEE0;">90</span><span style="font-size:clamp(20px,2.3vw,40px); font-weight:700; color:#8A968B;">%</span></div>
+                <p style="margin:0; max-width:420px; color:#A8B2A6; font-size:clamp(13px,1.05vw,16px); line-height:1.6; text-wrap:pretty;">dos primeiros contatos com escritórios já começam no WhatsApp. Atender ali virou piso de entrada; ninguém resolveu o que acontece depois da primeira mensagem.</p>
+              </div>
+              <div data-stat-row style="border-top:1px solid rgba(228,225,206,0.14); padding:clamp(16px,3vh,46px) 0; display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:14px 48px;">
+                <div style="display:flex; align-items:baseline; gap:11px; min-width:0;"><span data-count data-to="600" style="font-size:min(clamp(56px,8.6vw,158px), 13.5vh); font-weight:800; line-height:0.9; letter-spacing:-0.04em; color:#F1EEE0;">600</span><span style="font-size:clamp(20px,2.3vw,40px); font-weight:700; color:#8A968B;">+</span></div>
+                <p style="margin:0; max-width:420px; color:#A8B2A6; font-size:clamp(13px,1.05vw,16px); line-height:1.6; text-wrap:pretty;">legaltechs ativas no Brasil. O mercado não é vazio: é fase de consolidação, em que ganha quem consegue ser verificável — não quem promete mais.</p>
+              </div>
+            </div>
+            <p style="margin:clamp(14px,2.2vh,26px) 0 0; font-size:11.5px; color:#9AA79C; letter-spacing:0.04em;">Fontes: AB2L; levantamentos de uso de IA na advocacia e de canais de atendimento, consolidados na nossa pesquisa de mercado de agosto de 2026.</p>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <section id="casa" data-screen-label="A casa" style="position:relative; z-index:2; background:var(--paper); padding:clamp(80px,11vw,150px) clamp(20px,4.5vw,64px);">
+      <div style="max-width:1280px; margin:0 auto; display:flex; flex-direction:column; gap:clamp(40px,6vw,72px);">
+        <div style="display:flex; flex-wrap:wrap; gap:clamp(28px,5vw,80px); align-items:flex-end;">
+          <div style="flex:1 1 520px; min-width:0; display:flex; flex-direction:column; gap:20px;">
+            <p style="margin:0; font-size:11px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted);">( a casa )</p>
+            <h2 style="margin:0; font-weight:300; font-size:clamp(30px,4.3vw,62px); line-height:1.06; letter-spacing:-0.03em; color:var(--ink); text-wrap:pretty;">Ecosflow é a casa.<span style="display:block; color:#7C877E;">Ecos CRM é o primeiro produto dela.</span></h2>
+          </div>
+          <p style="flex:0 1 420px; min-width:280px; margin:0; color:var(--muted); font-size:clamp(15px,1.15vw,17px); line-height:1.7; text-wrap:pretty;">Construímos software para o lado comercial e administrativo do escritório: quem chegou, quem esfriou, quem precisa de contrato, quem precisa saber do andamento, quem precisa pagar. Nada disso é atividade privativa da advocacia — e essa fronteira é escolha de projeto, não limitação.</p>
+        </div>
+
+        <p style="margin:0; font-family:'Instrument Serif',Georgia,serif; font-style:italic; font-size:clamp(22px,3.1vw,44px); line-height:1.22; letter-spacing:-0.01em; color:var(--ink); max-width:24ch; border-left:2px solid var(--accent); padding-left:clamp(18px,2.5vw,32px);">O mercado está construindo IA que escreve Direito. Nós construímos a que cuida do negócio ao redor dele.</p>
+
+        <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr)); gap:14px;">
+          <article style="background:var(--card); border:1px solid var(--line); border-radius:20px; padding:clamp(24px,2.6vw,36px); display:flex; flex-direction:column; gap:12px;">
+            <span style="font-size:11px; font-weight:800; letter-spacing:0.16em; color:var(--accent);">PILAR 01</span>
+            <h3 style="margin:0; font-size:clamp(20px,1.9vw,26px); font-weight:700; letter-spacing:-0.02em; color:var(--ink);">Não some ninguém</h3>
+            <p style="margin:0; color:var(--muted); font-size:14.5px; line-height:1.65;">O agente responde na hora, qualifica com critério e avisa quando alguém ficou sem resposta — com o resumo da conversa e a mensagem de retomada pronta.</p>
+          </article>
+          <article style="background:var(--card); border:1px solid var(--line); border-radius:20px; padding:clamp(24px,2.6vw,36px); display:flex; flex-direction:column; gap:12px;">
+            <span style="font-size:11px; font-weight:800; letter-spacing:0.16em; color:var(--accent);">PILAR 02</span>
+            <h3 style="margin:0; font-size:clamp(20px,1.9vw,26px); font-weight:700; letter-spacing:-0.02em; color:var(--ink);">Você vê por quê</h3>
+            <p style="margin:0; color:var(--muted); font-size:14.5px; line-height:1.65;">Cada lead recebe nota em cinco dimensões, com a razão escrita ao lado. Quando a equipe sabe mais que a IA, a nota é corrigida à mão.</p>
+          </article>
+          <article style="background:var(--card); border:1px solid var(--line); border-radius:20px; padding:clamp(24px,2.6vw,36px); display:flex; flex-direction:column; gap:12px;">
+            <span style="font-size:11px; font-weight:800; letter-spacing:0.16em; color:var(--accent);">PILAR 03</span>
+            <h3 style="margin:0; font-size:clamp(20px,1.9vw,26px); font-weight:700; letter-spacing:-0.02em; color:var(--ink);">Tem alguém do outro lado</h3>
+            <p style="margin:0; color:var(--muted); font-size:14.5px; line-height:1.65;">Quem atende quando quebra é quem construiu. Canal direto e prazo de resposta declarado — enquanto a equipe for pequena o bastante para isso ser verdade.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="crm" data-screen-label="Ecos CRM" style="position:relative; z-index:2; background:var(--paper2); padding:clamp(80px,11vw,150px) clamp(20px,4.5vw,64px);">
+      <div style="max-width:1280px; margin:0 auto; display:flex; flex-direction:column; gap:clamp(30px,4vw,52px);">
+        <div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-end; justify-content:space-between;">
+          <div style="flex:1 1 480px; min-width:0; display:flex; flex-direction:column; gap:18px;">
+            <p style="margin:0; font-size:11px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted);">( soluções )</p>
+            <h2 style="margin:0; font-weight:300; font-size:clamp(28px,3.8vw,54px); line-height:1.08; letter-spacing:-0.03em; color:var(--ink); text-wrap:pretty;">Um produto em produção.<span style="display:block; color:#7C877E;">Os próximos nascem do mesmo motor.</span></h2>
+          </div>
+          <p style="flex:0 1 360px; min-width:260px; margin:0; color:var(--muted); font-size:14.5px; line-height:1.65;">Teste que todo produto da casa precisa passar para existir: resolver uma etapa da vida comercial do escritório sem produzir conteúdo jurídico substantivo.</p>
+        </div>
+
+        <article style="background:var(--pine); color:var(--bone); border-radius:26px; padding:clamp(26px,3.4vw,52px); display:flex; flex-wrap:wrap; gap:clamp(28px,4vw,60px);">
+          <div style="flex:1 1 320px; min-width:0; display:flex; flex-direction:column; gap:20px;">
+            <div aria-hidden="true" style="position:relative; width:84px; height:84px; flex:none;">
+              <div style="position:absolute; inset:0; border:1px solid rgba(228,225,206,0.45); border-radius:50%; animation:radarRing 3.2s linear infinite;"></div>
+              <div style="position:absolute; inset:0; border:1px solid rgba(228,225,206,0.45); border-radius:50%; animation:radarRing 3.2s linear infinite; animation-delay:1.05s;"></div>
+              <div style="position:absolute; inset:0; border:1px solid rgba(228,225,206,0.45); border-radius:50%; animation:radarRing 3.2s linear infinite; animation-delay:2.1s;"></div>
+              <div style="position:absolute; inset:0; border-radius:50%; background:conic-gradient(from 0deg, rgba(184,64,28,0.5), transparent 26%); animation:radarSweep 4.5s linear infinite;"></div>
+              <div style="position:absolute; top:50%; left:50%; width:7px; height:7px; margin:-3.5px 0 0 -3.5px; border-radius:50%; background:var(--accent);"></div>
+            </div>
+            <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
+              <h3 style="margin:0; font-size:clamp(26px,2.8vw,40px); font-weight:700; letter-spacing:-0.03em; color:#F1EEE0;">Ecos CRM</h3>
+              <span style="display:inline-flex; align-items:center; gap:7px; border:1px solid rgba(228,225,206,0.3); border-radius:999px; padding:5px 12px; font-size:11px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#BFC7BC;"><span aria-hidden="true" style="width:7px; height:7px; border-radius:50%; background:var(--amber); animation:softBlink 2.2s ease-in-out infinite;"></span>Em produção</span>
+            </div>
+            <p style="margin:0; color:#BFC7BC; font-size:clamp(15px,1.15vw,17px); line-height:1.7; max-width:46ch; text-wrap:pretty;">O lead chega pelo WhatsApp, é atendido na hora, é qualificado com nota e justificativa, e chega até o contrato sem depender de você estar livre. Quando esfria, o sistema avisa — e sugere o que dizer.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:8px;">
+              <span style="border:1px solid rgba(228,225,206,0.22); border-radius:999px; padding:6px 13px; font-size:11.5px; font-weight:600; color:#BFC7BC;">WhatsApp</span>
+              <span style="border:1px solid rgba(228,225,206,0.22); border-radius:999px; padding:6px 13px; font-size:11.5px; font-weight:600; color:#BFC7BC;">Agenda</span>
+              <span style="border:1px solid rgba(228,225,206,0.22); border-radius:999px; padding:6px 13px; font-size:11.5px; font-weight:600; color:#BFC7BC;">Cobrança</span>
+              <span style="border:1px solid rgba(228,225,206,0.22); border-radius:999px; padding:6px 13px; font-size:11.5px; font-weight:600; color:#BFC7BC;">Assinatura</span>
+              <span style="border:1px solid rgba(228,225,206,0.22); border-radius:999px; padding:6px 13px; font-size:11.5px; font-weight:600; color:#BFC7BC;">Aplicativo Android e iPhone</span>
+            </div>
+            <a href="#demo" style="display:inline-flex; align-items:center; gap:9px; font-size:13.5px; font-weight:700; color:#F1EEE0; transition:gap 0.3s;" style-hover="gap:14px; color:#FFFDEB;">Ver o agente trabalhar <span aria-hidden="true">↓</span></a>
+          </div>
+
+          <div style="flex:1 1 320px; min-width:min(100%,290px); display:flex; flex-direction:column; gap:12px;">
+            <div style="display:flex; gap:14px; align-items:flex-start; background:rgba(228,225,206,0.06); border:1px solid rgba(228,225,206,0.16); border-radius:16px; padding:16px 18px;">
+              <span aria-hidden="true" style="font-size:12px; font-weight:800; color:var(--amber); flex:none; padding-top:2px;">01</span>
+              <div style="display:flex; flex-direction:column; gap:3px;"><p style="margin:0; font-size:14.5px; font-weight:700; color:#F1EEE0;">Atende e qualifica</p><p style="margin:0; font-size:13.5px; color:#A8B2A6; line-height:1.55;">Responde na hora, entende o caso e pontua o lead pelo método DIUAD.</p></div>
+            </div>
+            <div style="display:flex; gap:14px; align-items:flex-start; background:rgba(228,225,206,0.06); border:1px solid rgba(228,225,206,0.16); border-radius:16px; padding:16px 18px;">
+              <span aria-hidden="true" style="font-size:12px; font-weight:800; color:var(--amber); flex:none; padding-top:2px;">02</span>
+              <div style="display:flex; flex-direction:column; gap:3px;"><p style="margin:0; font-size:14.5px; font-weight:700; color:#F1EEE0;">Conduz até o contrato</p><p style="margin:0; font-size:13.5px; color:#A8B2A6; line-height:1.55;">Move o cartão de etapa, cobra documento, marca reunião e lembra do pagamento.</p></div>
+            </div>
+            <div style="display:flex; gap:14px; align-items:flex-start; background:rgba(228,225,206,0.06); border:1px solid rgba(228,225,206,0.16); border-radius:16px; padding:16px 18px;">
+              <span aria-hidden="true" style="font-size:12px; font-weight:800; color:var(--amber); flex:none; padding-top:2px;">03</span>
+              <div style="display:flex; flex-direction:column; gap:3px;"><p style="margin:0; font-size:14.5px; font-weight:700; color:#F1EEE0;">Mostra o que se perde</p><p style="margin:0; font-size:13.5px; color:#A8B2A6; line-height:1.55;">Quantos procuraram no mês, quantos viraram cliente e quanto ficou na mesa.</p></div>
+            </div>
+            <div style="margin-top:6px; border:1px solid var(--accent); border-radius:16px; padding:16px 18px; background:rgba(184,64,28,0.12); display:flex; flex-direction:column; gap:8px;">
+              <p style="margin:0; font-size:10.5px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--amber);">Recuperação de lead frio</p>
+              <p style="margin:0; font-size:14px; color:#F1EEE0; line-height:1.55;">Parada há 9 dias · “vou conversar com meu sócio e retorno” · R$ 11.500 em análise contratual.</p>
+              <p style="margin:0; font-size:13px; color:#BFC7BC; line-height:1.55; font-style:italic;">Mensagem sugerida: “Oi, Bárbara. Você ia alinhar com o seu sócio a análise do contrato de exclusividade. Consigo segurar a agenda de quinta se ainda fizer sentido.”</p>
+            </div>
+          </div>
+        </article>
+
+        <div style="display:flex; flex-direction:column; gap:16px;">
+          <p style="margin:0; font-size:11px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted);">Próximos produtos da casa</p>
+          <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr)); gap:12px;">
+            <div style="border:1px dashed var(--line); border-radius:18px; padding:22px 24px; display:flex; flex-direction:column; gap:8px; background:rgba(252,250,243,0.5);">
+              <span style="font-size:10.5px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--muted);">Em estudo</span>
+              <p style="margin:0; font-size:17px; font-weight:700; color:var(--ink); letter-spacing:-0.01em;">Formalizar</p>
+              <p style="margin:0; font-size:13.5px; color:var(--muted); line-height:1.55;">Do aceite ao documento assinado, com revisão humana antes de qualquer envio.</p>
+            </div>
+            <div style="border:1px dashed var(--line); border-radius:18px; padding:22px 24px; display:flex; flex-direction:column; gap:8px; background:rgba(252,250,243,0.5);">
+              <span style="font-size:10.5px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--muted);">Em estudo</span>
+              <p style="margin:0; font-size:17px; font-weight:700; color:var(--ink); letter-spacing:-0.01em;">Manter informado</p>
+              <p style="margin:0; font-size:13.5px; color:var(--muted); line-height:1.55;">O cliente sabe o que mudou e qual é o próximo passo, no número do próprio escritório.</p>
+            </div>
+            <div style="border:1px dashed var(--line); border-radius:18px; padding:22px 24px; display:flex; flex-direction:column; gap:8px; background:rgba(252,250,243,0.5);">
+              <span style="font-size:10.5px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--muted);">Em estudo</span>
+              <p style="margin:0; font-size:17px; font-weight:700; color:var(--ink); letter-spacing:-0.01em;">Ser encontrado</p>
+              <p style="margin:0; font-size:13.5px; color:var(--muted); line-height:1.55;">Presença com constância, dentro do que o Provimento 205 permite ao escritório.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="demo" data-screen-label="Demo do agente" style="position:relative; z-index:2; background:#07120F; color:var(--bone); padding:clamp(80px,11vw,150px) clamp(20px,4.5vw,64px);">
+      <div style="max-width:1280px; margin:0 auto; display:flex; flex-direction:column; gap:clamp(30px,4vw,52px);">
+        <div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-end; justify-content:space-between;">
+          <div style="flex:1 1 480px; min-width:0; display:flex; flex-direction:column; gap:18px;">
+            <p style="margin:0; font-size:11px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:#8A968B;">( o método )</p>
+            <h2 style="margin:0; font-weight:300; font-size:clamp(28px,3.8vw,54px); line-height:1.08; letter-spacing:-0.03em; color:#F1EEE0; text-wrap:pretty;">DIUAD: a nota vem com a razão escrita ao lado.</h2>
+            <p style="margin:0; max-width:52ch; color:#A8B2A6; font-size:clamp(14px,1.1vw,16px); line-height:1.65; text-wrap:pretty;">Uma conversa real de qualificação, do jeito que ela acontece. Acompanhe a pontuação sendo construída à direita — Dor, Interesse, Urgência, Autoridade e Disposição, cada uma com a justificativa que o escritório pode contestar.</p>
+          </div>
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <button type="button" onClick="{{ replay }}" style="background:transparent; border:1px solid rgba(228,225,206,0.3); color:#E4E1CE; border-radius:999px; padding:10px 20px; font-size:13px; font-weight:700; cursor:pointer; transition:border-color 0.3s, background 0.3s;" style-hover="border-color:#E4E1CE; background:rgba(228,225,206,0.08);">↻ Rever do início</button>
+            <button type="button" onClick="{{ skipEnd }}" style="background:var(--accent); border:1px solid var(--accent); color:#F6F2E8; border-radius:999px; padding:10px 20px; font-size:13px; font-weight:700; cursor:pointer; transition:background 0.3s;" style-hover="background:#9B3517;">Ir para o resultado</button>
+          </div>
+        </div>
+
+        <div style="display:flex; flex-wrap:wrap; gap:clamp(18px,2.4vw,28px); align-items:stretch;">
+          <div style="flex:1 1 360px; min-width:min(100%,300px); background:#0C1A15; border:1px solid rgba(228,225,206,0.12); border-radius:22px; display:flex; flex-direction:column; overflow:hidden;">
+            <div style="display:flex; align-items:center; gap:11px; padding:16px 18px; border-bottom:1px solid rgba(228,225,206,0.1);">
+              <span aria-hidden="true" style="width:34px; height:34px; border-radius:50%; background:rgba(228,225,206,0.14); display:grid; place-items:center; font-size:12px; font-weight:800; color:#BFC7BC; flex:none;">BY</span>
+              <div style="display:flex; flex-direction:column; gap:1px; min-width:0;">
+                <p style="margin:0; font-size:13.5px; font-weight:700; color:#F1EEE0;">Bárbara Y.</p>
+                <p style="margin:0; font-size:11px; color:#8A968B;">WhatsApp do escritório · primeiro contato</p>
+              </div>
+              <span style="margin-left:auto; display:inline-flex; align-items:center; gap:7px; font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:10.5px; letter-spacing:0.1em; color:#8A968B; flex:none;"><span aria-hidden="true" style="width:6px; height:6px; border-radius:50%; background:var(--accent); animation:softBlink 2s ease-in-out infinite;"></span>AGENTE ATIVO</span>
+            </div>
+            <div style="flex:1; display:flex; flex-direction:column; gap:10px; padding:18px; min-height:420px;">
+              <sc-for list="{{ msgs }}" as="m" hint-placeholder-count="5">
+                <div>
+                  <sc-if value="{{ m.isLead }}" hint-placeholder-val="{{ true }}">
+                    <div style="display:flex; justify-content:flex-start; animation:bubbleIn 0.4s cubic-bezier(0.19,0.7,0.16,1) both;">
+                      <div style="max-width:86%; background:#17251F; border:1px solid rgba(228,225,206,0.1); border-radius:14px 14px 14px 4px; padding:11px 14px; display:flex; flex-direction:column; gap:4px;">
+                        <p style="margin:0; font-size:14px; color:#DFDCCB; line-height:1.5;">{{ m.text }}</p>
+                        <span style="font-size:10px; color:#8A968B; align-self:flex-end;">{{ m.time }}</span>
+                      </div>
+                    </div>
+                  </sc-if>
+                  <sc-if value="{{ m.isAgent }}" hint-placeholder-val="{{ false }}">
+                    <div style="display:flex; justify-content:flex-end; animation:bubbleIn 0.4s cubic-bezier(0.19,0.7,0.16,1) both;">
+                      <div style="max-width:86%; background:#1E3A2C; border:1px solid rgba(228,225,206,0.12); border-radius:14px 14px 4px 14px; padding:11px 14px; display:flex; flex-direction:column; gap:4px;">
+                        <p style="margin:0; font-size:14px; color:#EDEADA; line-height:1.5;">{{ m.text }}</p>
+                        <span style="font-size:10px; color:#9DAC9F; align-self:flex-end;">{{ m.time }} · agente</span>
+                      </div>
+                    </div>
+                  </sc-if>
+                </div>
+              </sc-for>
+              <sc-if value="{{ typing }}" hint-placeholder-val="{{ true }}">
+                <div style="display:flex; justify-content:flex-end;">
+                  <div style="background:#1E3A2C; border-radius:14px 14px 4px 14px; padding:12px 16px; display:flex; gap:5px; align-items:center;">
+                    <span aria-hidden="true" style="width:6px; height:6px; border-radius:50%; background:#9DAC9F; animation:softBlink 1.1s ease-in-out infinite;"></span>
+                    <span aria-hidden="true" style="width:6px; height:6px; border-radius:50%; background:#9DAC9F; animation:softBlink 1.1s ease-in-out 0.2s infinite;"></span>
+                    <span aria-hidden="true" style="width:6px; height:6px; border-radius:50%; background:#9DAC9F; animation:softBlink 1.1s ease-in-out 0.4s infinite;"></span>
+                  </div>
+                </div>
+              </sc-if>
+            </div>
+          </div>
+
+          <div style="flex:1 1 400px; min-width:min(100%,300px); background:#0C1A15; border:1px solid rgba(228,225,206,0.12); border-radius:22px; padding:clamp(20px,2.2vw,28px); display:flex; flex-direction:column; gap:16px;">
+            <div style="display:flex; align-items:baseline; justify-content:space-between; gap:12px; border-bottom:1px solid rgba(228,225,206,0.1); padding-bottom:14px;">
+              <p style="margin:0; font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:11px; letter-spacing:0.14em; color:#A8B2A6;">CARTÃO DO LEAD · DIUAD</p>
+              <p style="margin:0; font-size:13px; font-weight:800; color:#F1EEE0;">{{ total }}<span style="color:#8A968B; font-weight:600;">/25</span></p>
+            </div>
+
+            <sc-for list="{{ dims }}" as="d" hint-placeholder-count="5">
+              <div style="display:flex; flex-direction:column; gap:7px; padding-bottom:12px; border-bottom:1px solid rgba(228,225,206,0.07);">
+                <div style="display:flex; align-items:center; gap:10px;">
+                  <span style="width:20px; height:20px; border-radius:6px; background:rgba(228,225,206,0.1); display:grid; place-items:center; font-size:10.5px; font-weight:800; color:#BFC7BC; flex:none;">{{ d.letter }}</span>
+                  <p style="margin:0; font-size:13.5px; font-weight:700; color:#E4E1CE; flex:1;">{{ d.name }}</p>
+                  <p style="margin:0; font-size:12.5px; font-weight:800; color:{{ d.scoreColor }};">{{ d.label }}</p>
+                </div>
+                <div style="height:4px; border-radius:999px; background:rgba(228,225,206,0.1); overflow:hidden;">
+                  <div style="height:100%; width:{{ d.pct }}; background:var(--accent); border-radius:999px; transition:width 0.7s cubic-bezier(0.19,0.7,0.16,1);"></div>
+                </div>
+                <sc-if value="{{ d.on }}" hint-placeholder-val="{{ true }}">
+                  <p style="margin:0; font-size:12.5px; color:#9DAC9F; line-height:1.55; padding-left:30px; text-wrap:pretty;">{{ d.reason }}</p>
+                </sc-if>
+                <sc-if value="{{ d.off }}" hint-placeholder-val="{{ false }}">
+                  <p style="margin:0; font-size:12.5px; color:#7E8A80; line-height:1.55; padding-left:30px; font-style:italic;">aguardando sinal na conversa…</p>
+                </sc-if>
+              </div>
+            </sc-for>
+
+            <sc-if value="{{ done }}" hint-placeholder-val="{{ false }}">
+              <div style="display:flex; flex-direction:column; gap:12px; animation:revealUp 0.6s cubic-bezier(0.19,0.7,0.16,1) both;">
+                <div style="display:flex; flex-wrap:wrap; gap:8px; align-items:center;">
+                  <span style="background:rgba(184,64,28,0.24); color:#F0A88D; border-radius:999px; padding:6px 13px; font-size:11.5px; font-weight:800;">● Quente</span>
+                  <span style="border:1px solid rgba(228,225,206,0.2); border-radius:999px; padding:6px 13px; font-size:11.5px; font-weight:700; color:#BFC7BC;">Novo → Reunião marcada</span>
+                  <span style="border:1px solid rgba(228,225,206,0.2); border-radius:999px; padding:6px 13px; font-size:11.5px; font-weight:700; color:#BFC7BC;">Direito Digital</span>
+                </div>
+                <div style="border-left:2px solid var(--amber); padding-left:14px; display:flex; flex-direction:column; gap:4px;">
+                  <p style="margin:0; font-size:10.5px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:#8A968B;">Próximo passo</p>
+                  <p style="margin:0; font-size:14px; color:#DFDCCB; line-height:1.55;">Reunião com a Dra. Eduarda na quinta, 14h. Resumo da conversa e pedido de documentos anexados ao cartão.</p>
+                </div>
+              </div>
+            </sc-if>
+
+            <p style="margin:auto 0 0; font-size:10.5px; font-weight:700; letter-spacing:0.14em; color:#8A968B; line-height:1.6;">MODO ASSISTIDO · O AGENTE PROPÕE, VOCÊ APROVA ANTES DE ENVIAR</p>
+          </div>
+        </div>
+
+        <p style="margin:0; text-align:center; font-family:'Instrument Serif',Georgia,serif; font-style:italic; font-size:clamp(20px,2.6vw,36px); color:#F1EEE0; line-height:1.25;">A IA pontua e explica. Quem decide é sempre o escritório.</p>
+      </div>
+    </section>
+
+    <section id="origem" data-screen-label="Origem" style="position:relative; z-index:2; background:var(--paper); padding:clamp(80px,11vw,150px) clamp(20px,4.5vw,64px);">
+      <div style="max-width:1280px; margin:0 auto; display:flex; flex-wrap:wrap; gap:clamp(36px,6vw,90px); align-items:flex-start;">
+        <div style="flex:1 1 320px; min-width:min(100%,280px); position:sticky; top:96px; display:flex; flex-direction:column; gap:18px;">
+          <p style="margin:0; font-size:11px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted);">( a origem )</p>
+          <h2 style="margin:0; font-weight:300; font-size:clamp(28px,3.8vw,54px); line-height:1.06; letter-spacing:-0.03em; color:var(--ink); text-wrap:pretty;">Começou com uma necessidade real.</h2>
+          <p style="margin:0; max-width:38ch; color:var(--muted); font-size:15px; line-height:1.7; text-wrap:pretty;">A resposta foi construída a partir do problema, não de uma tendência. Uma advogada que perdia cliente por falta de tempo de responder, e um engenheiro que transformou isso em produto.</p>
+          <div style="display:flex; flex-direction:column; gap:10px; margin-top:8px; border-top:1px solid var(--line); padding-top:20px;">
+            <p style="margin:0; font-size:14px; color:var(--ink);"><strong style="font-weight:700;">Eduarda F. da S. Machado</strong> — advocacia e operação. Usa o sistema todo dia no próprio escritório.</p>
+            <p style="margin:0; font-size:14px; color:var(--ink);"><strong style="font-weight:700;">Marcos F. Tamoyo Freire</strong> — engenharia e produto. Escreveu o código que já está rodando.</p>
+          </div>
+        </div>
+        <div style="flex:1 1 460px; min-width:min(100%,300px); display:flex; flex-direction:column;">
+          <article style="border-top:1px solid var(--line); padding:clamp(22px,2.6vw,34px) 0; display:grid; grid-template-columns:64px 1fr; gap:14px;">
+            <span style="font-size:clamp(28px,3.4vw,44px); font-weight:800; line-height:0.9; color:transparent; -webkit-text-stroke:1.4px var(--accent);">01</span>
+            <div style="display:flex; flex-direction:column; gap:8px;"><h3 style="margin:0; font-size:clamp(18px,1.6vw,23px); font-weight:700; color:var(--ink); letter-spacing:-0.02em;">A necessidade</h3><p style="margin:0; color:var(--muted); font-size:14.5px; line-height:1.65; max-width:48ch; text-wrap:pretty;">Cliente real, demanda real, sem resposta por pura correria. A conta do que se perde entre a primeira mensagem e o contrato nunca tinha sido feita.</p></div>
+          </article>
+          <article style="border-top:1px solid var(--line); padding:clamp(22px,2.6vw,34px) 0; display:grid; grid-template-columns:64px 1fr; gap:14px;">
+            <span style="font-size:clamp(28px,3.4vw,44px); font-weight:800; line-height:0.9; color:transparent; -webkit-text-stroke:1.4px var(--accent);">02</span>
+            <div style="display:flex; flex-direction:column; gap:8px;"><h3 style="margin:0; font-size:clamp(18px,1.6vw,23px); font-weight:700; color:var(--ink); letter-spacing:-0.02em;">O problema virou produto</h3><p style="margin:0; color:var(--muted); font-size:14.5px; line-height:1.65; max-width:48ch; text-wrap:pretty;">Sem modismo: o que precisava funcionar na prática definiu cada decisão de engenharia — inclusive a de ficar fora da atividade privativa da advocacia.</p></div>
+          </article>
+          <article style="border-top:1px solid var(--line); padding:clamp(22px,2.6vw,34px) 0; display:grid; grid-template-columns:64px 1fr; gap:14px;">
+            <span style="font-size:clamp(28px,3.4vw,44px); font-weight:800; line-height:0.9; color:transparent; -webkit-text-stroke:1.4px var(--accent);">03</span>
+            <div style="display:flex; flex-direction:column; gap:8px;"><h3 style="margin:0; font-size:clamp(18px,1.6vw,23px); font-weight:700; color:var(--ink); letter-spacing:-0.02em;">O uso mostrou o caminho</h3><p style="margin:0; color:var(--muted); font-size:14.5px; line-height:1.65; max-width:48ch; text-wrap:pretty;">O sistema entrou em operação num escritório de verdade. A rotina revelou o que funcionava, o que faltava e o que devia ser cortado.</p></div>
+          </article>
+          <article style="border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding:clamp(22px,2.6vw,34px) 0; display:grid; grid-template-columns:64px 1fr; gap:14px;">
+            <span style="font-size:clamp(28px,3.4vw,44px); font-weight:800; line-height:0.9; color:transparent; -webkit-text-stroke:1.4px var(--accent);">04</span>
+            <div style="display:flex; flex-direction:column; gap:8px;"><h3 style="margin:0; font-size:clamp(18px,1.6vw,23px); font-weight:700; color:var(--ink); letter-spacing:-0.02em;">A casa</h3><p style="margin:0; color:var(--muted); font-size:14.5px; line-height:1.65; max-width:48ch; text-wrap:pretty;">O que começou como um sistema virou o primeiro produto de uma casa de software — com espaço para os próximos, e para outros setores que vendem por WhatsApp.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="regras" data-screen-label="Regras" style="position:relative; z-index:2; background:var(--paper2); padding:clamp(80px,11vw,150px) clamp(20px,4.5vw,64px);">
+      <div style="max-width:1280px; margin:0 auto; display:flex; flex-wrap:wrap; gap:clamp(36px,5vw,80px); align-items:flex-start;">
+        <div style="flex:1 1 320px; min-width:min(100%,280px); display:flex; flex-direction:column; gap:18px;">
+          <p style="margin:0; font-size:11px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted);">( as regras )</p>
+          <h2 style="margin:0; font-weight:300; font-size:clamp(28px,3.8vw,54px); line-height:1.06; letter-spacing:-0.03em; color:var(--ink); text-wrap:pretty;">Nascido dentro das regras.</h2>
+          <p style="margin:0; max-width:38ch; color:var(--muted); font-size:15px; line-height:1.7; text-wrap:pretty;">Conformidade aqui não é página de FAQ — é arquitetura de produto. O comprador jurídico compra software de IA com medo, e tem motivo.</p>
+        </div>
+        <div style="flex:1 1 480px; min-width:min(100%,300px); display:flex; flex-direction:column;">
+          <div style="border-top:1px solid var(--line); padding:clamp(22px,2.6vw,36px) 0; display:grid; grid-template-columns:56px 1fr; gap:14px;">
+            <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:12px; color:var(--accent); padding-top:4px;">001</span>
+            <div style="display:flex; flex-direction:column; gap:8px;">
+              <h3 style="margin:0; font-size:clamp(16px,1.3vw,19px); font-weight:700; color:var(--ink);">Recomendação OAB nº 001/2024</h3>
+              <p style="margin:0; color:var(--muted); font-size:14px; line-height:1.65; text-wrap:pretty;">Supervisão humana, verificação do que a IA produz e comunicação por escrito ao cliente sobre o uso. O modo assistido é a expressão dessa norma dentro do produto — configuração padrão, não recurso avançado.</p>
+            </div>
+          </div>
+          <div style="border-top:1px solid var(--line); padding:clamp(22px,2.6vw,36px) 0; display:grid; grid-template-columns:56px 1fr; gap:14px;">
+            <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:12px; color:var(--accent); padding-top:4px;">002</span>
+            <div style="display:flex; flex-direction:column; gap:8px;">
+              <h3 style="margin:0; font-size:clamp(16px,1.3vw,19px); font-weight:700; color:var(--ink);">Provimento OAB 205/2021</h3>
+              <p style="margin:0; color:var(--muted); font-size:14px; line-height:1.65; text-wrap:pretty;">Sobriedade e discrição na comunicação do escritório, sem promessa de resultado nem captação indevida. A regra entra embutida no que o produto permite publicar em nome do cliente.</p>
+            </div>
+          </div>
+          <div style="border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding:clamp(22px,2.6vw,36px) 0; display:grid; grid-template-columns:56px 1fr; gap:14px;">
+            <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:12px; color:var(--accent); padding-top:4px;">003</span>
+            <div style="display:flex; flex-direction:column; gap:8px;">
+              <h3 style="margin:0; font-size:clamp(16px,1.3vw,19px); font-weight:700; color:var(--ink);">LGPD e sigilo profissional</h3>
+              <p style="margin:0; color:var(--muted); font-size:14px; line-height:1.65; text-wrap:pretty;">Base legal, contrato de tratamento com cada fornecedor de IA, controle de acesso por perfil e anonimização antes da chamada do modelo. Dado de cliente de escritório não treina modelo.</p>
+            </div>
+          </div>
+          <p style="margin:clamp(22px,3vw,36px) 0 0; font-family:'Instrument Serif',Georgia,serif; font-style:italic; font-size:clamp(18px,1.9vw,25px); color:var(--ink); line-height:1.35;">A IA não advoga e não substitui o advogado. Ela cuida do que acontece antes e depois do Direito.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="planos" data-screen-label="Planos" style="position:relative; z-index:2; background:var(--paper); padding:clamp(80px,11vw,150px) clamp(20px,4.5vw,64px);">
+      <div style="max-width:1280px; margin:0 auto; display:flex; flex-direction:column; gap:clamp(28px,4vw,48px);">
+        <div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-end; justify-content:space-between;">
+          <div style="flex:1 1 440px; min-width:0; display:flex; flex-direction:column; gap:16px;">
+            <p style="margin:0; font-size:11px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted);">( planos )</p>
+            <h2 style="margin:0; font-weight:300; font-size:clamp(28px,3.8vw,54px); line-height:1.06; letter-spacing:-0.03em; color:var(--ink);">Tabela de lançamento.</h2>
+          </div>
+          <p style="flex:0 1 380px; min-width:260px; margin:0; color:var(--muted); font-size:14.5px; line-height:1.65;">Assinatura mensal do Ecos CRM, com franquia de conversas por plano. A implantação é cobrada à parte, conforme o escritório. Sem fidelidade.</p>
+        </div>
+
+        <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr)); gap:14px; align-items:start;">
+          <article style="background:var(--card); border:1px solid var(--line); border-radius:22px; padding:clamp(24px,2.6vw,34px); display:flex; flex-direction:column; gap:18px;">
+            <div style="display:flex; flex-direction:column; gap:6px;">
+              <p style="margin:0; font-size:11px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:var(--muted);">Essencial</p>
+              <p style="margin:0; font-size:clamp(30px,3vw,40px); font-weight:800; letter-spacing:-0.03em; color:var(--ink);">R$ 397<span style="font-size:0.38em; font-weight:600; color:var(--muted);">/mês</span></p>
+              <p style="margin:0; font-size:13.5px; color:var(--muted); line-height:1.55;">Para o escritório que quer parar de perder mensagem.</p>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:9px; border-top:1px solid var(--line); padding-top:16px;">
+              <p style="margin:0; font-size:13.5px; color:var(--ink); line-height:1.5;">Um número de WhatsApp atendido pelo agente</p>
+              <p style="margin:0; font-size:13.5px; color:var(--ink); line-height:1.5;">Qualificação DIUAD com justificativa escrita</p>
+              <p style="margin:0; font-size:13.5px; color:var(--ink); line-height:1.5;">Pipeline e painel de conversão</p>
+              <p style="margin:0; font-size:13.5px; color:var(--ink); line-height:1.5;">Aplicativo Android e iPhone</p>
+            </div>
+            <a href="#workshop" style="margin-top:auto; text-align:center; border:1px solid var(--ink); color:var(--ink); border-radius:999px; padding:13px 22px; font-size:13.5px; font-weight:700; transition:background 0.3s, color 0.3s;" style-hover="background:var(--ink); color:var(--paper);">Quero este</a>
+          </article>
+
+          <article style="background:var(--pine); color:var(--bone); border:1px solid var(--pine); border-radius:22px; padding:clamp(24px,2.6vw,34px); display:flex; flex-direction:column; gap:18px; box-shadow:0 30px 60px -40px rgba(12,42,32,0.8);">
+            <div style="display:flex; flex-direction:column; gap:6px;">
+              <p style="margin:0; display:flex; align-items:center; gap:9px; flex-wrap:wrap; font-size:11px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:var(--amber);">Operação<span style="background:var(--accent); color:#F6F2E8; border-radius:999px; padding:3px 9px; font-size:9.5px; letter-spacing:0.1em;">MAIS ESCOLHIDO</span></p>
+              <p style="margin:0; font-size:clamp(30px,3vw,40px); font-weight:800; letter-spacing:-0.03em; color:#F1EEE0;">R$ 697<span style="font-size:0.38em; font-weight:600; color:#A8B2A6;">/mês</span></p>
+              <p style="margin:0; font-size:13.5px; color:#A8B2A6; line-height:1.55;">Para o escritório com mais de uma pessoa no atendimento.</p>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:9px; border-top:1px solid rgba(228,225,206,0.16); padding-top:16px;">
+              <p style="margin:0; font-size:13.5px; color:#E4E1CE; line-height:1.5;">Tudo do Essencial</p>
+              <p style="margin:0; font-size:13.5px; color:#E4E1CE; line-height:1.5;">Follow-up e recuperação de lead frio</p>
+              <p style="margin:0; font-size:13.5px; color:#E4E1CE; line-height:1.5;">Agenda, cobrança e assinatura integradas</p>
+              <p style="margin:0; font-size:13.5px; color:#E4E1CE; line-height:1.5;">Quatro perfis de acesso e modo assistido por equipe</p>
+            </div>
+            <a href="#workshop" style="margin-top:auto; text-align:center; background:#E7E3D3; color:#0F1A15; border-radius:999px; padding:13px 22px; font-size:13.5px; font-weight:700; transition:background 0.3s;" style-hover="background:#FFFDEB; color:#0F1A15;">Quero este</a>
+          </article>
+
+          <article style="background:var(--card); border:1px solid var(--line); border-radius:22px; padding:clamp(24px,2.6vw,34px); display:flex; flex-direction:column; gap:18px;">
+            <div style="display:flex; flex-direction:column; gap:6px;">
+              <p style="margin:0; font-size:11px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:var(--muted);">Escritório</p>
+              <p style="margin:0; font-size:clamp(30px,3vw,40px); font-weight:800; letter-spacing:-0.03em; color:var(--ink);">R$ 1.397<span style="font-size:0.38em; font-weight:600; color:var(--muted);">/mês</span></p>
+              <p style="margin:0; font-size:13.5px; color:var(--muted); line-height:1.55;">Para quem tem área comercial e exige prazo de resposta.</p>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:9px; border-top:1px solid var(--line); padding-top:16px;">
+              <p style="margin:0; font-size:13.5px; color:var(--ink); line-height:1.5;">Tudo da Operação</p>
+              <p style="margin:0; font-size:13.5px; color:var(--ink); line-height:1.5;">Fluxos configurados por área de atuação</p>
+              <p style="margin:0; font-size:13.5px; color:var(--ink); line-height:1.5;">Base de conhecimento com busca semântica</p>
+              <p style="margin:0; font-size:13.5px; color:var(--ink); line-height:1.5;">Canal direto com quem construiu, com prazo declarado</p>
+            </div>
+            <a href="#workshop" style="margin-top:auto; text-align:center; border:1px solid var(--ink); color:var(--ink); border-radius:999px; padding:13px 22px; font-size:13.5px; font-weight:700; transition:background 0.3s, color 0.3s;" style-hover="background:var(--ink); color:var(--paper);">Quero este</a>
+          </article>
+        </div>
+
+        <div style="background:var(--card); border:1px solid var(--line); border-radius:22px; padding:clamp(22px,2.6vw,34px); display:flex; flex-wrap:wrap; gap:24px; align-items:center; justify-content:space-between;">
+          <div style="flex:1 1 340px; min-width:0; display:flex; flex-direction:column; gap:8px;">
+            <p style="margin:0; font-size:11px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent);">Add-on · acompanhamento processual</p>
+            <p style="margin:0; font-size:15px; color:var(--ink); line-height:1.6; max-width:52ch; text-wrap:pretty;">Monitoramento, painel de movimentação e alerta de prazo, entregues ao escritório. Contratado junto de qualquer plano.</p>
+          </div>
+          <div style="display:flex; flex-wrap:wrap; gap:10px;">
+            <div style="border:1px solid var(--line); border-radius:14px; padding:12px 18px; display:flex; flex-direction:column; gap:2px;"><span style="font-size:18px; font-weight:800; color:var(--ink);">R$ 197</span><span style="font-size:11.5px; color:var(--muted);">até 150 processos</span></div>
+            <div style="border:1px solid var(--line); border-radius:14px; padding:12px 18px; display:flex; flex-direction:column; gap:2px;"><span style="font-size:18px; font-weight:800; color:var(--ink);">R$ 397</span><span style="font-size:11.5px; color:var(--muted);">até 500 processos</span></div>
+            <div style="border:1px solid var(--line); border-radius:14px; padding:12px 18px; display:flex; flex-direction:column; gap:2px;"><span style="font-size:18px; font-weight:800; color:var(--ink);">R$ 697</span><span style="font-size:11.5px; color:var(--muted);">até 1.500 processos</span></div>
+          </div>
+        </div>
+        <p style="margin:0; font-size:12px; color:var(--muted);">Valores da tabela de lançamento, apresentada no workshop. Implantação orçada à parte conforme o escopo do escritório.</p>
+      </div>
+    </section>
+
+    <section id="visao" data-screen-label="Visão" style="position:relative; z-index:2; background:#07120F; color:var(--bone); padding:clamp(80px,11vw,150px) clamp(20px,4.5vw,64px);">
+      <div style="max-width:1280px; margin:0 auto; display:flex; flex-wrap:wrap; gap:clamp(32px,5vw,72px); align-items:center;">
+        <div style="flex:1 1 380px; min-width:min(100%,300px); display:flex; flex-direction:column; gap:20px;">
+          <p style="margin:0; font-size:11px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:#8A968B;">( visão )</p>
+          <h2 style="margin:0; font-weight:300; font-size:clamp(28px,3.8vw,54px); line-height:1.06; letter-spacing:-0.03em; color:#F1EEE0; text-wrap:pretty;">O produto é o começo da casa.</h2>
+          <p style="margin:0; max-width:48ch; color:#A8B2A6; font-size:clamp(14px,1.1vw,16px); line-height:1.65; text-wrap:pretty;">Quatro capacidades sustentam tudo que a Ecosflow vai construir depois do CRM. Clique para ver cada uma.</p>
+          <div role="tablist" aria-label="Capacidades da casa" style="display:flex; gap:9px; flex-wrap:wrap;">
+            <sc-for list="{{ ecoTabs }}" as="t" hint-placeholder-count="4">
+              <button type="button" role="tab" onClick="{{ t.pick }}" aria-selected="{{ t.selected }}" style="background:{{ t.bg }}; border:1px solid {{ t.border }}; color:{{ t.fg }}; border-radius:999px; padding:10px 20px; font-size:13px; font-weight:700; cursor:pointer; transition:background 0.3s, border-color 0.3s;">{{ t.name }}</button>
+            </sc-for>
+          </div>
+          <div aria-live="polite" style="background:rgba(228,225,206,0.06); border:1px solid rgba(228,225,206,0.16); border-radius:18px; padding:24px; min-height:132px; display:flex; flex-direction:column; gap:8px;">
+            <h3 style="margin:0; font-size:18px; font-weight:700; color:var(--amber);">{{ ecoTitle }}</h3>
+            <p style="margin:0; color:#BFC7BC; font-size:14.5px; line-height:1.6; text-wrap:pretty;">{{ ecoText }}</p>
+          </div>
+        </div>
+        <div style="flex:1 1 380px; min-width:min(100%,290px); display:grid; place-items:center;">
+          <svg viewBox="0 0 480 480" aria-hidden="true" style="width:100%; max-width:480px; height:auto; display:block;">
+            <circle cx="240" cy="240" r="172" fill="none" stroke="rgba(228,225,206,0.18)" stroke-dasharray="3 8"></circle>
+            <circle cx="240" cy="240" r="106" fill="none" stroke="rgba(228,225,206,0.12)" stroke-dasharray="3 8"></circle>
+            <g style="transform-origin:240px 240px; animation:spinSlow 52s linear infinite;">
+              <g transform="translate(240,68)"><g style="transform-box:fill-box; transform-origin:center; animation:spinBack 52s linear infinite;"><circle r="38" fill="#12271E" stroke="rgba(228,225,206,0.35)"></circle><text y="4" text-anchor="middle" style="font-family:Manrope,sans-serif; font-size:11px; font-weight:700; letter-spacing:0.1em; fill:#E4E1CE;">tecnologia</text></g></g>
+              <g transform="translate(412,240)"><g style="transform-box:fill-box; transform-origin:center; animation:spinBack 52s linear infinite;"><circle r="38" fill="#12271E" stroke="rgba(228,225,206,0.35)"></circle><text y="4" text-anchor="middle" style="font-family:Manrope,sans-serif; font-size:11px; font-weight:700; letter-spacing:0.1em; fill:#E4E1CE;">automação</text></g></g>
+              <g transform="translate(240,412)"><g style="transform-box:fill-box; transform-origin:center; animation:spinBack 52s linear infinite;"><circle r="38" fill="#12271E" stroke="rgba(228,225,206,0.35)"></circle><text y="4" text-anchor="middle" style="font-family:Manrope,sans-serif; font-size:11px; font-weight:700; letter-spacing:0.1em; fill:#E4E1CE;">explicação</text></g></g>
+              <g transform="translate(68,240)"><g style="transform-box:fill-box; transform-origin:center; animation:spinBack 52s linear infinite;"><circle r="38" fill="#12271E" stroke="rgba(228,225,206,0.35)"></circle><text y="4" text-anchor="middle" style="font-family:Manrope,sans-serif; font-size:11px; font-weight:700; letter-spacing:0.1em; fill:#E4E1CE;">proximidade</text></g></g>
+            </g>
+            <circle cx="240" cy="240" r="54" fill="#07120F" stroke="rgba(228,225,206,0.2)"></circle>
+            <circle cx="272" cy="214" r="5" fill="#B8401C"></circle>
+            <text x="240" y="246" text-anchor="middle" style="font-family:Manrope,sans-serif; font-size:19px; font-weight:300; letter-spacing:0.06em; fill:#F1EEE0;">ecosflow</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="workshop" data-screen-label="Workshop" style="position:relative; z-index:2; background:var(--pine); padding:clamp(80px,11vw,150px) clamp(20px,4.5vw,64px);">
+      <div style="max-width:1080px; margin:0 auto; display:flex; flex-wrap:wrap; gap:clamp(32px,5vw,64px); align-items:flex-start;">
+        <div style="flex:1 1 340px; min-width:min(100%,280px); display:flex; flex-direction:column; gap:20px;">
+          <p style="margin:0; font-size:11px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--amber);">( workshop de lançamento )</p>
+          <h2 style="margin:0; font-weight:300; font-size:clamp(28px,3.8vw,52px); line-height:1.06; letter-spacing:-0.03em; color:#F1EEE0; text-wrap:pretty;">O sistema ao vivo, com quem construiu.</h2>
+          <p style="margin:0; max-width:44ch; color:#BFC7BC; font-size:15px; line-height:1.7; text-wrap:pretty;">Uma sessão fechada: o Ecos CRM rodando de verdade, a tabela na tela e condição de lançamento só para quem estiver na sala. Sem gravação e sem lista de espera infinita.</p>
+          <div style="display:flex; flex-direction:column; gap:10px; border-top:1px solid rgba(228,225,206,0.16); padding-top:20px;">
+            <p style="margin:0; font-size:13.5px; color:#A8B2A6; line-height:1.6;">Três perguntas no formulário. É o que precisamos para saber se o produto serve para você antes de qualquer conversa.</p>
+          </div>
+        </div>
+
+        <div style="flex:1 1 400px; min-width:min(100%,290px); background:var(--paper); border-radius:24px; padding:clamp(24px,3vw,40px);">
+          <sc-if value="{{ notSent }}" hint-placeholder-val="{{ true }}">
+            <form onSubmit="{{ submit }}" style="display:flex; flex-direction:column; gap:16px;">
+              <div style="display:flex; flex-direction:column; gap:7px;">
+                <label for="wsNome" style="font-size:11px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--muted);">Nome e escritório</label>
+                <input id="wsNome" name="nome" type="text" required placeholder="Eduarda · Machado Advocacia" style="width:100%; box-sizing:border-box; border:1px solid var(--line); background:var(--card); border-radius:12px; padding:13px 15px; font-size:14.5px; color:var(--ink); transition:border-color 0.25s, box-shadow 0.25s;" style-focus="outline:none; border-color:var(--pine); box-shadow:0 0 0 4px rgba(12,42,32,0.1);">
+              </div>
+              <div style="display:flex; flex-direction:column; gap:7px;">
+                <label for="wsEmail" style="font-size:11px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--muted);">E-mail ou WhatsApp</label>
+                <input id="wsEmail" name="contato" type="text" required placeholder="voce@escritorio.adv.br" style="width:100%; box-sizing:border-box; border:1px solid var(--line); background:var(--card); border-radius:12px; padding:13px 15px; font-size:14.5px; color:var(--ink); transition:border-color 0.25s, box-shadow 0.25s;" style-focus="outline:none; border-color:var(--pine); box-shadow:0 0 0 4px rgba(12,42,32,0.1);">
+              </div>
+              <div style="display:flex; flex-direction:column; gap:7px;">
+                <label for="wsQuem" style="font-size:11px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--muted);">Quem responde o WhatsApp do escritório hoje?</label>
+                <select id="wsQuem" name="quem" required style="width:100%; box-sizing:border-box; border:1px solid var(--line); background:var(--card); border-radius:12px; padding:13px 15px; font-size:14.5px; color:var(--ink);" style-focus="outline:none; border-color:var(--pine); box-shadow:0 0 0 4px rgba(12,42,32,0.1);">
+                  <option value="eu">Eu mesmo, sócio ou sócia</option>
+                  <option value="secretaria">Secretária ou recepção</option>
+                  <option value="estagiario">Estagiário</option>
+                  <option value="associado">Advogado associado</option>
+                  <option value="comercial">Time comercial dedicado</option>
+                </select>
+              </div>
+              <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,140px),1fr)); gap:12px;">
+                <div style="display:flex; flex-direction:column; gap:7px;">
+                  <label for="wsPessoas" style="font-size:11px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--muted);">Pessoas no escritório</label>
+                  <input id="wsPessoas" name="pessoas" type="number" min="1" required placeholder="6" style="width:100%; box-sizing:border-box; border:1px solid var(--line); background:var(--card); border-radius:12px; padding:13px 15px; font-size:14.5px; color:var(--ink);" style-focus="outline:none; border-color:var(--pine); box-shadow:0 0 0 4px rgba(12,42,32,0.1);">
+                </div>
+                <div style="display:flex; flex-direction:column; gap:7px;">
+                  <label for="wsProcessos" style="font-size:11px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--muted);">Processos ativos</label>
+                  <input id="wsProcessos" name="processos" type="number" min="0" required placeholder="180" style="width:100%; box-sizing:border-box; border:1px solid var(--line); background:var(--card); border-radius:12px; padding:13px 15px; font-size:14.5px; color:var(--ink);" style-focus="outline:none; border-color:var(--pine); box-shadow:0 0 0 4px rgba(12,42,32,0.1);">
+                </div>
+              </div>
+              <button type="submit" style="margin-top:4px; display:inline-flex; align-items:center; justify-content:center; gap:12px; background:var(--accent); color:#F6F2E8; border:none; cursor:pointer; border-radius:999px; padding:15px 24px; font-size:14.5px; font-weight:700; transition:background 0.3s, gap 0.35s cubic-bezier(0.22,1,0.36,1);" style-hover="background:#9B3517; gap:18px;">Entrar na lista do workshop<span aria-hidden="true">→</span></button>
+              <p style="margin:0; font-size:11.5px; color:var(--muted); line-height:1.6;">Usamos esses dados só para organizar o convite e dimensionar a sala. Nada de disparo em massa.</p>
+            </form>
+          </sc-if>
+          <sc-if value="{{ sent }}" hint-placeholder-val="{{ false }}">
+            <div style="display:flex; flex-direction:column; gap:14px; padding:20px 0; animation:revealUp 0.6s cubic-bezier(0.19,0.7,0.16,1) both;">
+              <span aria-hidden="true" style="width:54px; height:54px; border-radius:50%; background:var(--pine); color:var(--paper); display:grid; place-items:center; font-size:22px;">✓</span>
+              <h3 style="margin:0; font-size:23px; font-weight:700; color:var(--ink); letter-spacing:-0.02em;">Inscrição registrada.</h3>
+              <p style="margin:0; color:var(--muted); font-size:15px; line-height:1.65; text-wrap:pretty;">Confirmamos a data e o link com você em até dois dias úteis. Se quiser adiantar alguma dúvida, é só responder a mensagem que chegar — quem responde é quem construiu.</p>
+            </div>
+          </sc-if>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer style="position:relative; z-index:2; background:#050E0B; color:#A8B2A6; padding:clamp(56px,7vw,86px) clamp(20px,4.5vw,64px) 28px;">
+    <div style="max-width:1280px; margin:0 auto; display:flex; flex-direction:column; gap:clamp(32px,4vw,52px);">
+      <div style="display:flex; flex-wrap:wrap; gap:32px; justify-content:space-between; align-items:flex-start;">
+        <div style="flex:1 1 320px; min-width:0; display:flex; flex-direction:column; gap:16px;">
+          <div style="display:flex; align-items:center; gap:12px;">
+            <img src="./logo-mark.png" alt="Ecosflow" style="width:38px; height:38px; object-fit:contain; filter:invert(1);">
+            <span style="font-size:19px; font-weight:300; letter-spacing:0.16em; color:#E4E1CE;">ecosflow</span>
+          </div>
+          <p style="margin:0; max-width:40ch; font-size:14px; line-height:1.65; color:#8A968B;">Casa de software para a operação do escritório. O Ecos CRM é o primeiro produto — e o primeiro de uma série que nunca vai produzir conteúdo jurídico substantivo.</p>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:10px;">
+          <p style="margin:0; font-size:11px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:#8A968B;">Navegar</p>
+          <a href="#casa" style="font-size:14px; color:#A8B2A6;" style-hover="color:#F1EEE0;">A casa</a>
+          <a href="#crm" style="font-size:14px; color:#A8B2A6;" style-hover="color:#F1EEE0;">Ecos CRM</a>
+          <a href="#demo" style="font-size:14px; color:#A8B2A6;" style-hover="color:#F1EEE0;">O agente</a>
+          <a href="#planos" style="font-size:14px; color:#A8B2A6;" style-hover="color:#F1EEE0;">Planos</a>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:10px;">
+          <p style="margin:0; font-size:11px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:#8A968B;">Contato</p>
+          <a href="mailto:contato@ecosflow.com.br" style="font-size:14px; color:#A8B2A6;" style-hover="color:#F1EEE0;">contato@ecosflow.com.br</a>
+          <a href="#workshop" style="font-size:14px; color:#A8B2A6;" style-hover="color:#F1EEE0;">Lista do workshop</a>
+          <span style="font-size:14px; color:#8A968B;">São Paulo, Brasil</span>
+        </div>
+      </div>
+      <div style="border-top:1px solid rgba(228,225,206,0.1); padding-top:22px; display:flex; flex-wrap:wrap; gap:14px 32px; justify-content:space-between;">
+        <p style="margin:0; font-size:12px; color:#8A968B;">© 2026 Ecosflow. Todos os direitos reservados.</p>
+        <p style="margin:0; font-size:12px; color:#8A968B; max-width:62ch; text-wrap:pretty;">Ferramenta de produtividade comercial e administrativa. Não presta serviços advocatícios, não produz conteúdo jurídico e não substitui a análise de um advogado.</p>
+      </div>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;accent&quot;: { &quot;editor&quot;: &quot;color&quot;, &quot;default&quot;: &quot;#B8401C&quot;, &quot;options&quot;: [&quot;#B8401C&quot;, &quot;#C97A2B&quot;, &quot;#2F6B52&quot;, &quot;#8A3324&quot;], &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Marca&quot; },
+  &quot;cineLength&quot;: { &quot;editor&quot;: &quot;range&quot;, &quot;default&quot;: 340, &quot;min&quot;: 200, &quot;max&quot;: 600, &quot;step&quot;: 20, &quot;unit&quot;: &quot;vh&quot;, &quot;tsType&quot;: &quot;number&quot;, &quot;section&quot;: &quot;Abertura cinemática&quot; },
+  &quot;demoSpeed&quot;: { &quot;editor&quot;: &quot;range&quot;, &quot;default&quot;: 1500, &quot;min&quot;: 700, &quot;max&quot;: 2600, &quot;step&quot;: 100, &quot;unit&quot;: &quot;ms&quot;, &quot;tsType&quot;: &quot;number&quot;, &quot;section&quot;: &quot;Demonstração&quot; }
+}">
+class Component extends DCLogic {
+  state = { step: 0, eco: 0, sent: false };
+
+  MSGS = [
+    { text: 'Oi, boa tarde. Vi o perfil de vocês e queria saber sobre um contrato que assinei com uma agência.', time: '09:12', who: 'lead' },
+    { text: 'Boa tarde! Sou o atendimento do escritório. Me conta rapidinho: o contrato já está assinado e em vigor?', time: '09:12', who: 'agent' },
+    { text: 'Já. Assinei em janeiro e agora estão cobrando exclusividade de tudo que eu publico.', time: '09:14', who: 'lead' },
+    { text: 'Entendi. Isso já está gerando prejuízo agora ou é uma preocupação para os próximos meses?', time: '09:14', who: 'agent' },
+    { text: 'Agora. Perdi duas campanhas esse mês por causa dessa cláusula.', time: '09:15', who: 'lead' },
+    { text: 'A decisão de contratar o escritório é sua ou tem sócio ou empresário envolvido?', time: '09:15', who: 'agent' },
+    { text: 'É minha. Eu que resolvo.', time: '09:16', who: 'lead' },
+    { text: 'Perfeito. Tenho quinta às 14h ou sexta às 10h com a Dra. Eduarda. Qual fica melhor?', time: '09:16', who: 'agent' },
+    { text: 'Quinta 14h. Quanto costuma ficar uma análise dessas?', time: '09:17', who: 'lead' }
+  ];
+
+  DIMS = [
+    { letter: 'D', name: 'Dor', at: 4, score: 5, reason: 'Perdeu duas campanhas no mês por causa da cláusula de exclusividade. Prejuízo declarado pela própria pessoa.' },
+    { letter: 'I', name: 'Interesse', at: 2, score: 4, reason: 'Procurou o escritório por conta própria e respondeu em menos de um minuto às duas perguntas.' },
+    { letter: 'U', name: 'Urgência', at: 4, score: 5, reason: 'O prejuízo já está acontecendo — não é hipótese para os próximos meses.' },
+    { letter: 'A', name: 'Autoridade', at: 6, score: 5, reason: 'Decide a contratação sozinha, sem sócio ou empresário no caminho.' },
+    { letter: 'D', name: 'Disposição', at: 8, score: 3, reason: 'Perguntou preço antes da reunião. Sensível a valor: a proposta deve abrir pelo escopo.' }
+  ];
+
+  ECO = [
+    { name: 'tecnologia', title: 'Tecnologia', text: 'Uma base só: dados, produto e infraestrutura que sustentam qualquer produto novo da casa sem recomeçar do zero.' },
+    { name: 'automação', title: 'Automação', text: 'Automatiza o que é ruído e preserva o que é relação. Cada fluxo tem propósito declarado e um humano por perto quando importa.' },
+    { name: 'explicação', title: 'Explicação', text: 'Toda decisão da IA vem com a razão escrita, o log e a possibilidade de correção manual. É o que separa método de caixa-preta.' },
+    { name: 'proximidade', title: 'Proximidade', text: 'Quem atende quando quebra é quem construiu. Enquanto isso for verdade, é o que entregamos melhor que empresa grande.' }
+  ];
+
+  componentDidMount() {
+    document.documentElement.lang = 'pt-BR';
+    this.applyProps();
+    this.observeDemo();
+    this.startVideo();
+    this._loop = () => { this.frame(); this._raf = requestAnimationFrame(this._loop); };
+    this._raf = requestAnimationFrame(this._loop);
+  }
+
+  componentDidUpdate() {
+    this.applyProps();
+    if (!this._io && !this._timer) this.observeDemo();
+  }
+
+  componentWillUnmount() {
+    clearInterval(this._timer);
+    cancelAnimationFrame(this._raf);
+    this._loop = null;
+    if (this._io) this._io.disconnect();
+  }
+
+  applyProps() {
+    const root = document.querySelector('[data-root]');
+    if (root) root.style.setProperty('--accent', this.props.accent ?? '#B8401C');
+  }
+
+  /* ---------- chat demo ---------- */
+
+  observeDemo() {
+    const el = document.getElementById('demo');
+    if (!el || this._io) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { this.setState({ step: this.MSGS.length }); return; }
+    this._io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { this.play(); this._io.disconnect(); this._io = null; } });
+    }, { threshold: 0.25 });
+    this._io.observe(el);
+  }
+
+  play = () => {
+    clearInterval(this._timer);
+    const speed = Math.max(600, Math.min(2600, this.props.demoSpeed ?? 1500));
+    this._timer = setInterval(() => {
+      this.setState((s) => {
+        if (s.step >= this.MSGS.length) { clearInterval(this._timer); this._timer = null; return null; }
+        return { step: s.step + 1 };
+      });
+    }, speed);
+  };
+
+  replay = () => { this.setState({ step: 0 }); this.play(); };
+  skipEnd = () => { clearInterval(this._timer); this._timer = null; this.setState({ step: this.MSGS.length }); };
+  pickEco = (i) => () => this.setState({ eco: i });
+
+  submit = (e) => {
+    e.preventDefault();
+    const form = e.currentTarget;
+    if (form.checkValidity && !form.checkValidity()) { form.reportValidity(); return; }
+    this.setState({ sent: true });
+  };
+
+  /* ---------- cinematic scroll engine (no external library) ----------
+     Runs every frame and writes the full transform state, so a React
+     re-render that resets inline styles self-heals on the next tick. */
+
+  set(el, prop, val) { if (el && el.style[prop] !== val) el.style[prop] = val; }
+
+  clip(el, v) { this.set(el, 'clipPath', v); this.set(el, 'webkitClipPath', v); }
+
+  cineOn() {
+    return !window.matchMedia('(prefers-reduced-motion: reduce)').matches &&
+      window.matchMedia('(min-width: 720px) and (min-height: 420px)').matches;
+  }
+
+  // The muted ATTRIBUTE alone does not always set the property, and without it autoplay is blocked.
+  startVideo() {
+    const v = document.querySelector('[data-hero-video]');
+    if (!v || this._vid === v) return;
+    this._vid = v;
+    v.muted = true;
+    v.defaultMuted = true;
+    v.playsInline = true;
+    v.volume = 0;
+    const go = () => { const r = v.play(); if (r) r.catch(() => {}); };
+    go();
+    v.addEventListener('canplay', go);
+    v.addEventListener('loadeddata', go);
+    ['pointerdown', 'keydown', 'scroll'].forEach((ev) => {
+      window.addEventListener(ev, go, { once: true, passive: true });
+    });
+  }
+
+  particles(stage) {
+    if (this._dots && this._dots.length && this._dots[0].el.isConnected) return this._dots;
+    const old = stage.querySelector('[data-dots]');
+    if (old) old.remove();
+    const wrap = document.createElement('div');
+    wrap.setAttribute('data-dots', '');
+    wrap.setAttribute('aria-hidden', 'true');
+    wrap.style.cssText = 'position:absolute;inset:0;z-index:4;pointer-events:none;overflow:hidden;';
+    stage.appendChild(wrap);
+    this._dots = [];
+    for (let i = 0; i < 20; i++) {
+      const depth = 0.3 + ((i * 37) % 70) / 100;
+      const sz = (1.5 + depth * 3).toFixed(1);
+      const d = document.createElement('div');
+      const bg = i % 6 === 0 ? 'var(--accent)' : 'rgba(228,225,206,' + (0.12 + depth * 0.3).toFixed(2) + ')';
+      d.style.cssText = 'position:absolute;left:' + ((i * 53) % 100) + '%;top:' + (25 + ((i * 41) % 80)) + '%;width:' + sz + 'px;height:' + sz + 'px;border-radius:50%;background:' + bg + ';';
+      wrap.appendChild(d);
+      this._dots.push({ el: d, depth, phase: i * 0.7 });
+    }
+    return this._dots;
+  }
+
+  frame() {
+    const wrap = document.querySelector('[data-cine]');
+    const stage = document.querySelector('[data-cine-stage]');
+    const s1 = document.querySelector('[data-scene="1"]');
+    const s2 = document.querySelector('[data-scene="2"]');
+    const s3 = document.querySelector('[data-scene="3"]');
+    if (!wrap || !stage || !s1 || !s2 || !s3) return;
+
+    const q = (sel) => document.querySelector(sel);
+    const counts = document.querySelectorAll('[data-count]');
+
+    if (!this.cineOn()) {
+      if (this._on !== false) {
+        this._on = false;
+        [wrap, stage, s1, s2, s3].forEach((el) => { el.style.height = ''; el.style.position = ''; el.style.top = ''; el.style.left = ''; el.style.width = ''; el.style.zIndex = ''; el.style.overflow = ''; el.style.perspective = ''; });
+        stage.style.position = 'sticky';
+        wrap.style.position = 'relative';
+        [s2, s3].forEach((s) => this.clip(s, 'none'));
+        ['[data-hero-panel]', '[data-hero-side]', '[data-wordmark]', '[data-glow]', '[data-m-card]', '[data-m-label]', '[data-m-title]', '[data-m-text]', '[data-n-inner]', '[data-n-label]', '[data-stat-row]'].forEach((sel) => {
+          document.querySelectorAll(sel).forEach((el) => { el.style.transform = ''; el.style.opacity = ''; });
+        });
+        this.clip(q('[data-wm-solid]'), 'none');
+        this.set(q('[data-dim1]'), 'opacity', '0');
+        this.set(q('[data-dim2]'), 'opacity', '0');
+        counts.forEach((el) => { el.textContent = el.getAttribute('data-to'); });
+        const dots = stage.querySelector('[data-dots]');
+        if (dots) { dots.remove(); this._dots = null; }
+      }
+      this.startVideo();
+      const vOff = s1.querySelector('[data-hero-video]');
+      if (vOff && vOff.paused && vOff.readyState > 1) { const r = vOff.play(); if (r) r.catch(() => {}); }
+      return;
+    }
+    this.startVideo();
+    this._on = true;
+
+    const len = Math.max(200, Math.min(600, this.props.cineLength ?? 340));
+    this.set(wrap, 'height', 'calc(100svh + ' + len + 'vh)');
+    this.set(stage, 'height', '100svh');
+    this.set(stage, 'overflow', 'clip');
+    this.set(stage, 'perspective', '1500px');
+    this.set(stage, 'perspectiveOrigin', '52% 46%');
+    [s1, s2, s3].forEach((s, i) => {
+      this.set(s, 'position', 'absolute');
+      this.set(s, 'top', '0'); this.set(s, 'left', '0');
+      this.set(s, 'width', '100%'); this.set(s, 'height', '100%');
+      this.set(s, 'minHeight', '0'); this.set(s, 'zIndex', String(i + 1));
+    });
+
+    const rect = wrap.getBoundingClientRect();
+    const span = Math.max(1, rect.height - window.innerHeight);
+    const p = Math.max(0, Math.min(1, -rect.top / span));
+
+    const seg = (a, b) => Math.max(0, Math.min(1, (p - a) / (b - a)));
+    const eo = (t) => 1 - Math.pow(1 - t, 3);
+    const ei = (t) => t * t;
+    const wipe = (t) => t <= 0 ? 'polygon(160% 100%, 260% 0%, 200% 0%, 200% 100%)'
+      : t >= 1 ? 'none'
+      : 'polygon(' + (160 - t * 320) + '% 100%, ' + (260 - t * 320) + '% 0%, 200% 0%, 200% 100%)';
+
+    // A — hero
+    const fill = seg(0.04, 0.30);
+    this.clip(q('[data-wm-solid]'), fill >= 1 ? 'none' : 'inset(0 ' + (100 - fill * 100).toFixed(2) + '% 0 0)');
+    this.set(q('[data-glow]'), 'transform', 'translateY(' + (-p * 14).toFixed(2) + 'vh)');
+    const sideOut = seg(0.22, 0.34);
+    document.querySelectorAll('[data-hero-side]').forEach((el, i) => {
+      const t = Math.max(0, Math.min(1, (sideOut - i * 0.06) / (1 - i * 0.06)));
+      this.set(el, 'transform', 'translateY(' + (-t * 38).toFixed(1) + 'px)');
+      this.set(el, 'opacity', String((1 - ei(t)).toFixed(3)));
+    });
+    const wmUp = seg(0.30, 0.46);
+    this.set(q('[data-wordmark]'), 'transform', 'translateY(' + (-wmUp * 7).toFixed(2) + '%)');
+
+    // B — hero recedes, manifesto card flies in
+    const b = seg(0.32, 0.56);
+    this.set(q('[data-hero-panel]'), 'transform', 'perspective(1500px) translateZ(' + (-b * 320).toFixed(0) + 'px) translateY(' + (-b * 5).toFixed(2) + 'vh) rotateY(' + (-b * 7).toFixed(2) + 'deg) rotateX(' + (b * 3).toFixed(2) + 'deg) scale(' + (1 - b * 0.1).toFixed(3) + ')');
+    this.set(q('[data-dim1]'), 'opacity', (b * 0.62).toFixed(3));
+    this.clip(s2, wipe(b));
+    const bIn = eo(b);
+    this.set(q('[data-m-card]'), 'transform', 'perspective(1500px) translate3d(' + ((1 - bIn) * 9).toFixed(2) + 'vw, ' + ((1 - bIn) * 13).toFixed(2) + 'vh, ' + ((1 - bIn) * 420).toFixed(0) + 'px) rotateY(' + ((1 - bIn) * 14).toFixed(2) + 'deg) rotateX(' + (-(1 - bIn) * 6).toFixed(2) + 'deg)');
+    [['[data-m-label]', 0.40], ['[data-m-title]', 0.43], ['[data-m-text]', 0.48]].forEach(([sel, at]) => {
+      const t = eo(seg(at, at + 0.09));
+      this.set(q(sel), 'transform', 'translateY(' + ((1 - t) * 30).toFixed(1) + 'px)');
+      this.set(q(sel), 'opacity', t.toFixed(3));
+    });
+
+    // C — manifesto recedes, numbers plate arrives
+    const c = seg(0.62, 0.88);
+    this.set(q('[data-m-card]'), 'opacity', '1');
+    if (c > 0) {
+      this.set(q('[data-m-card]'), 'transform', 'perspective(1500px) translate3d(0, ' + (-c * 6).toFixed(2) + 'vh, ' + (-c * 340).toFixed(0) + 'px) rotateY(' + (-c * 9).toFixed(2) + 'deg) rotateX(' + (c * 4).toFixed(2) + 'deg)');
+    }
+    this.set(q('[data-dim2]'), 'opacity', (c * 0.58).toFixed(3));
+    this.clip(s3, wipe(c));
+    const cIn = eo(c);
+    this.set(q('[data-n-inner]'), 'transform', 'perspective(1500px) translate3d(' + ((1 - cIn) * 7).toFixed(2) + 'vw, ' + ((1 - cIn) * 13).toFixed(2) + 'vh, ' + ((1 - cIn) * 380).toFixed(0) + 'px) rotateY(' + ((1 - cIn) * 12).toFixed(2) + 'deg)');
+    const nl = eo(seg(0.70, 0.78));
+    this.set(q('[data-n-label]'), 'transform', 'translateY(' + ((1 - nl) * 16).toFixed(1) + 'px)');
+    this.set(q('[data-n-label]'), 'opacity', nl.toFixed(3));
+
+    const rows = document.querySelectorAll('[data-stat-row]');
+    rows.forEach((r, i) => {
+      const t = eo(seg(0.72 + i * 0.06, 0.84 + i * 0.06));
+      this.set(r, 'transform', 'perspective(1200px) translate3d(0, ' + ((1 - t) * 60).toFixed(1) + 'px, ' + ((1 - t) * 140).toFixed(0) + 'px) rotateX(' + (-(1 - t) * 14).toFixed(2) + 'deg)');
+      this.set(r, 'opacity', t.toFixed(3));
+      r.querySelectorAll('[data-count]').forEach((el) => {
+        const to = parseFloat(el.getAttribute('data-to'));
+        const txt = String(Math.round(to * t));
+        if (el.textContent !== txt) el.textContent = txt;
+      });
+    });
+
+    // depth dust
+    const now = performance.now() / 1000;
+    this.particles(stage).forEach(({ el, depth, phase }) => {
+      const y = -(p * (140 + depth * 620)) + Math.sin(now * 0.5 + phase) * 6;
+      this.set(el, 'transform', 'translate3d(0,' + y.toFixed(1) + 'px,0)');
+      this.set(el, 'opacity', (0.25 + Math.sin(now * 0.8 + phase) * 0.22 + 0.3).toFixed(3));
+    });
+
+    const video = s1.querySelector('[data-hero-video]');
+    if (video) {
+      if (p > 0.6 && !video.paused) video.pause();
+      else if (p <= 0.6 && video.paused && video.readyState > 1) { const r = video.play(); if (r) r.catch(() => {}); }
+    }
+  }
+
+  renderVals() {
+    const step = this.state.step;
+    const msgs = this.MSGS.slice(0, step).map((m, i) => ({
+      id: 'm' + i, text: m.text, time: m.time, isLead: m.who === 'lead', isAgent: m.who === 'agent'
+    }));
+    const dims = this.DIMS.map((d) => {
+      const on = step > d.at;
+      return {
+        letter: d.letter, name: d.name, on, off: !on,
+        label: on ? d.score + '/5' : '—',
+        scoreColor: on ? '#E7E3D3' : '#7E8A80',
+        pct: on ? (d.score / 5) * 100 + '%' : '0%',
+        reason: d.reason
+      };
+    });
+    const total = this.DIMS.reduce((a, d) => a + (step > d.at ? d.score : 0), 0);
+    const eco = this.ECO[this.state.eco] || this.ECO[0];
+    return {
+      msgs, dims, total,
+      done: step >= this.MSGS.length,
+      typing: step > 0 && step < this.MSGS.length,
+      replay: this.replay,
+      skipEnd: this.skipEnd,
+      ecoTabs: this.ECO.map((t, i) => ({
+        name: t.name, pick: this.pickEco(i), selected: this.state.eco === i,
+        bg: this.state.eco === i ? 'var(--accent)' : 'transparent',
+        border: this.state.eco === i ? 'var(--accent)' : 'rgba(228,225,206,0.3)',
+        fg: this.state.eco === i ? '#F6F2E8' : '#E4E1CE'
+      })),
+      ecoTitle: eco.title,
+      ecoText: eco.text,
+      sent: this.state.sent,
+      notSent: !this.state.sent,
+      submit: this.submit
+    };
+  }
+}
+</script>
+</body>
+</html>

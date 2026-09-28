@@ -1,0 +1,7 @@
+# Mesma política do operation-crm: recusa pacote publicado há menos de 24h
+# (o valor é em minutos) e só roda script de instalação dos pacotes listados.
+minimumReleaseAge: 1440
+
+allowBuilds:
+  sharp: true
+  unrs-resolver: true

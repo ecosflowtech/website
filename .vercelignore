@@ -1,0 +1,7 @@
+# O que não sobe para a Vercel: segredos locais, a pasta do design (referência,
+# com vídeos pesados) e sobras de build. A Vercel instala e monta do zero.
+.env*
+design/
+.next/
+node_modules/
+*.tsbuildinfo
