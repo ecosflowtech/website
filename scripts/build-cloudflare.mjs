@@ -22,12 +22,16 @@ for (const route of ['entrar', 'academy']) {
 }
 // Public destinations are supplied explicitly by the build environment, never
 // copied from a developer's .env.local (which can contain localhost or secrets).
+const destinations = {
+  // Academy Worker published on 03/10/2026; a Cloudflare build variable overrides it.
+  ACADEMY_URL: process.env.ACADEMY_URL || 'https://ecosflow-academy.ecosflowtech.workers.dev',
+};
 await writeFile(path.join(stage, 'next.config.mjs'), `export default {
   output: 'export', trailingSlash: true, poweredByHeader: false,
   images: { unoptimized: true },
   turbopack: { root: ${JSON.stringify(root)} }
 };\n`);
 const result = spawnSync(process.execPath, [path.join(root, 'node_modules/next/dist/bin/next'), 'build', stage], {
-  cwd: root, stdio: 'inherit', env: { ...process.env, NEXT_TELEMETRY_DISABLED: '1' },
+  cwd: root, stdio: 'inherit', env: { ...process.env, ...destinations, NEXT_TELEMETRY_DISABLED: '1' },
 });
 if (result.status !== 0) process.exit(result.status ?? 1);
