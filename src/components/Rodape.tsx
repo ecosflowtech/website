@@ -14,7 +14,7 @@ export function Rodape() {
               <img src="/logo-mark.png" alt="Ecosflow" style={{ width: "38px", height: "38px", objectFit: "contain", filter: "invert(1)" }} />
               <span style={{ fontSize: "19px", fontWeight: "300", letterSpacing: "0.16em", color: "#E4E1CE" }}>ecosflow</span>
             </div>
-            <p style={{ margin: "0", maxWidth: "40ch", fontSize: "14px", lineHeight: "1.65", color: "#8A968B" }}>Empresa de software, automação e inteligência artificial. Criadora do Ecos CRM e da Ecosflow Academy, nossa frente de aprendizagem em preparação.</p>
+            <p style={{ margin: "0", maxWidth: "40ch", fontSize: "14px", lineHeight: "1.65", color: "#8A968B" }}>Empresa de software, automação e inteligência artificial. Criadora do Ecos CRM e da Ecosflow Academy, nossa frente de aprendizagem.</p>
           </div>
           <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
             <p style={titulo}>Navegar</p>

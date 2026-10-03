@@ -70,7 +70,7 @@ export default function Entrar() {
           </div>
 
           <div style={{ borderTop: "1px solid var(--line)", paddingTop: "clamp(22px,2.6vw,32px)", display: "flex", flexWrap: "wrap", gap: "14px 32px", alignItems: "center", justifyContent: "space-between" }}>
-            <p style={{ margin: "0", color: "var(--muted)", fontSize: "15px", lineHeight: "1.65", maxWidth: "56ch", textWrap: "pretty" }}>Estamos preparando a Ecosflow Academy com conteúdo de onboarding para orientar os primeiros passos no Ecos CRM.</p>
+            <p style={{ margin: "0", color: "var(--muted)", fontSize: "15px", lineHeight: "1.65", maxWidth: "56ch", textWrap: "pretty" }}>A Ecosflow Academy reúne trilhas de onboarding para orientar os primeiros passos no Ecos CRM.</p>
             <Link href="/academy" style={{ display: "inline-flex", alignItems: "center", gap: "9px", fontSize: "14px", fontWeight: "700", color: "var(--ink)", transition: "gap 0.3s" }} className="hv-4">Ir para a Academy <span aria-hidden="true">→</span></Link>
           </div>
         </div>
