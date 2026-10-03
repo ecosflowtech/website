@@ -1,5 +1,12 @@
 # Publicação na Cloudflare
 
+Publicado em 03/10/2026: https://ecosflow.ecosflowtech.workers.dev/
+Release inicial: `31268ee`, build Cloudflare `44274642-a365-4ba3-944b-d4dff6d0fabd`.
+Website institucional e formulário conferidos no endereço público. A inscrição
+sintética `TESTE PUBLICACAO ECOSFLOW - IGNORAR` ficou como registro de teste
+identificado (id 1); não é participante e não deve receber convite.
+O Netlify mantém a versão antiga enquanto os deploys daquela conta estão pausados.
+
 O website usa Workers Static Assets e uma função para `POST /api/workshop`.
 As inscrições ficam no banco D1 `ecosflow-workshop`, binding `WORKSHOP_DB`.
 Consultar inscrições: Cloudflare > Storage & databases > D1 > ecosflow-workshop > Explore Data.
