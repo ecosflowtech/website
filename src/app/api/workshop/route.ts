@@ -1,8 +1,6 @@
 import { NextResponse } from "next/server";
 import { gravarInscricao, inscricoesConfiguradas, validarInscricao } from "@/lib/inscricoes";
 
-const CONTATO = "contato@ecosflow.com.br";
-
 export async function POST(pedido: Request) {
   const corpo = (await pedido.json().catch(() => null)) as Record<string, unknown> | null;
   if (!corpo || typeof corpo !== "object") {
@@ -23,7 +21,7 @@ export async function POST(pedido: Request) {
   // Sem banco configurado, a resposta diz a verdade em vez de fingir que registrou.
   if (!inscricoesConfiguradas()) {
     return NextResponse.json(
-      { erro: `As inscrições pelo site ainda não estão abertas. Escreva para ${CONTATO} e guardamos seu lugar.` },
+      { erro: "As inscrições pelo site ainda não estão abertas." },
       { status: 503 },
     );
   }
@@ -33,7 +31,7 @@ export async function POST(pedido: Request) {
   } catch (erro) {
     console.error("inscrição do workshop não gravada", erro);
     return NextResponse.json(
-      { erro: `Não conseguimos registrar agora. Tente de novo em alguns minutos ou escreva para ${CONTATO}.` },
+      { erro: "Não conseguimos registrar agora. Tente de novo em alguns minutos." },
       { status: 500 },
     );
   }

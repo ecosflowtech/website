@@ -9,3 +9,6 @@ next-env.d.ts
 !.env.example
 # Cópia antiga do vídeo que veio com o export do design.
 design/_backup/
+
+.cloudflare-build/
+.wrangler/

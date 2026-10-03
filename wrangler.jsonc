@@ -1,0 +1,24 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ecosflow",
+  "main": "cloudflare/worker.ts",
+  "compatibility_date": "2026-10-03",
+  "workers_dev": true,
+  "assets": {
+    "directory": ".cloudflare-build/out",
+    "binding": "ASSETS",
+    "run_worker_first": [
+      "/api/*"
+    ]
+  },
+  "observability": {
+    "enabled": false
+  },
+  "d1_databases": [
+    {
+      "binding": "WORKSHOP_DB",
+      "database_name": "ecosflow-workshop",
+      "database_id": "631b95d9-9e17-4273-baa4-5a7ae321f0c2"
+    }
+  ]
+}
