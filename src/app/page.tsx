@@ -27,17 +27,17 @@ export default function Inicio() {
                 <div style={{ position: "relative", flex: "1", minHeight: "0", padding: "clamp(78px,10vh,130px) clamp(20px,4vw,56px) clamp(20px,2.6vw,38px)", display: "flex", flexDirection: "column", justifyContent: "flex-end", gap: "clamp(20px,4vh,52px)", overflow: "hidden" }}>
                   <div style={{ display: "flex", flexWrap: "wrap", gap: "clamp(20px,3.4vw,64px)", alignItems: "flex-end" }}>
                     <div data-hero-side style={{ flex: "1 1 340px", minWidth: "0", display: "flex", flexDirection: "column", gap: "20px" }}>
-                      <p style={{ margin: "0", fontSize: "11px", fontWeight: "700", letterSpacing: "0.22em", textTransform: "uppercase", color: "var(--amber)", animation: "revealSoft 0.8s ease both" }}>Casa de software · IA para a operação do escritório</p>
-                      <h1 style={{ margin: "0", fontWeight: "300", fontSize: "min(clamp(28px,3.5vw,56px), 7.4vh)", lineHeight: "1.1", letterSpacing: "-0.025em", color: "#F1EEE0", maxWidth: "19ch", textWrap: "pretty", animation: "revealUp 1s cubic-bezier(0.19,0.7,0.16,1) both" }}>O escritório não perde cliente por falta de competência.<span style={{ display: "block", fontFamily: "var(--font-serif)", fontStyle: "italic", fontWeight: "400", fontSize: "1.06em", color: "#FFFDEB", marginTop: "0.18em" }}>Perde por falta de tempo de responder.</span></h1>
+                      <p style={{ margin: "0", fontSize: "11px", fontWeight: "700", letterSpacing: "0.22em", textTransform: "uppercase", color: "var(--amber)", animation: "revealSoft 0.8s ease both" }}>Ecosflow · Software, automação e inteligência artificial</p>
+                      <h1 style={{ margin: "0", fontWeight: "300", fontSize: "min(clamp(28px,3.5vw,56px), 7.4vh)", lineHeight: "1.1", letterSpacing: "-0.025em", color: "#F1EEE0", maxWidth: "19ch", textWrap: "pretty", animation: "revealUp 1s cubic-bezier(0.19,0.7,0.16,1) both" }}>Tecnologia para organizar o trabalho.<span style={{ display: "block", fontFamily: "var(--font-serif)", fontStyle: "italic", fontWeight: "400", fontSize: "1.06em", color: "#FFFDEB", marginTop: "0.18em" }}>Mais tempo para cuidar das pessoas.</span></h1>
                     </div>
                     <div data-hero-side style={{ flex: "1 1 300px", minWidth: "min(100%,280px)", maxWidth: "420px", display: "flex", flexDirection: "column", gap: "18px", paddingBottom: "6px", animation: "revealUp 1s cubic-bezier(0.19,0.7,0.16,1) 0.2s both" }}>
-                      <p style={{ margin: "0", color: "#BFC7BC", fontSize: "clamp(14px,1.1vw,16px)", lineHeight: "1.65", textWrap: "pretty" }}>A Ecosflow constrói a inteligência artificial que opera o lado comercial do escritório: qualifica, acompanha, recupera e conduz até o contrato. Fora da atividade privativa da advocacia, por desenho.</p>
+                      <p style={{ margin: "0", color: "#BFC7BC", fontSize: "clamp(14px,1.1vw,16px)", lineHeight: "1.65", textWrap: "pretty" }}>A Ecosflow desenvolve software para atendimento e gestão comercial. Nosso primeiro produto é o Ecos CRM: um SaaS que reúne WhatsApp, organização de contatos e automações com IA, começando pela rotina dos escritórios de advocacia.</p>
                       <div style={{ display: "flex", flexWrap: "wrap", gap: "12px", alignItems: "center" }}>
                         <a href="#workshop" style={{ display: "inline-flex", alignItems: "center", gap: "12px", background: "#E7E3D3", color: "#0F1A15", borderRadius: "999px", padding: "7px 7px 7px 22px", fontSize: "14px", fontWeight: "700", transition: "gap 0.35s cubic-bezier(0.22,1,0.36,1), background 0.3s" }} className="hv-3">Entrar na lista do workshop<span aria-hidden="true" style={{ width: "36px", height: "36px", borderRadius: "50%", background: "var(--accent)", color: "#F6F2E8", display: "grid", placeItems: "center", fontSize: "15px" }}>→</span></a>
                       </div>
                       <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
-                        <span style={{ border: "1px solid rgba(228,225,206,0.22)", borderRadius: "999px", padding: "6px 13px", fontSize: "11.5px", fontWeight: "600", color: "#BFC7BC" }}>Em produção num escritório real</span>
-                        <span style={{ border: "1px solid rgba(228,225,206,0.22)", borderRadius: "999px", padding: "6px 13px", fontSize: "11.5px", fontWeight: "600", color: "#BFC7BC" }}>Supervisão humana por padrão</span>
+                        <span style={{ border: "1px solid rgba(228,225,206,0.22)", borderRadius: "999px", padding: "6px 13px", fontSize: "11.5px", fontWeight: "600", color: "#BFC7BC" }}>Ecos CRM em uso em um escritório</span>
+                        <span style={{ border: "1px solid rgba(228,225,206,0.22)", borderRadius: "999px", padding: "6px 13px", fontSize: "11.5px", fontWeight: "600", color: "#BFC7BC" }}>Tecnologia a serviço da equipe</span>
                       </div>
                     </div>
                   </div>
@@ -58,30 +58,30 @@ export default function Inicio() {
             <section data-scene="2" id="contexto" data-screen-label="Contexto" style={{ position: "relative", minHeight: "100svh", boxSizing: "border-box", background: "#07120F", display: "flex", alignItems: "center", justifyContent: "center", padding: "clamp(70px,10vh,120px) clamp(16px,4vw,64px)" }}>
               <div data-m-card style={{ maxWidth: "1100px", width: "100%", background: "#0C1A15", border: "1px solid rgba(228,225,206,0.07)", borderRadius: "26px", padding: "clamp(36px,7vh,96px) clamp(22px,5vw,80px)", textAlign: "center", display: "flex", flexDirection: "column", alignItems: "center", gap: "clamp(20px,3.4vh,40px)", boxShadow: "0 60px 120px -60px rgba(0,0,0,0.9)" }}>
                 <p data-m-label style={{ margin: "0", fontSize: "11px", fontWeight: "700", letterSpacing: "0.22em", textTransform: "uppercase", color: "#8A968B" }}>( o contexto )</p>
-                <h2 data-m-title style={{ margin: "0", maxWidth: "900px", fontWeight: "300", fontSize: "clamp(26px,3.9vw,58px)", lineHeight: "1.08", letterSpacing: "-0.02em", color: "#F1EEE0", textWrap: "pretty" }}>Todo escritório tem um funil comercial.<span style={{ display: "block", fontFamily: "var(--font-serif)", fontStyle: "italic", fontWeight: "400", fontSize: "1.05em", color: "#FFFDEB" }}>Quase nenhum consegue enxergar o dele.</span></h2>
-                <p data-m-text style={{ margin: "0", maxWidth: "660px", color: "#BFC7BC", fontSize: "clamp(14px,1.15vw,17px)", lineHeight: "1.75", fontWeight: "300", textWrap: "pretty" }}>Entre a primeira mensagem no WhatsApp e o contrato assinado existe uma fila de tarefas que ninguém registrou: responder, entender o caso, decidir se vale, marcar a reunião, cobrar o documento, lembrar do pagamento. Quando o escritório está cheio, é essa fila que trava — e o cliente que já tinha escolhido você desiste no silêncio.</p>
+                <h2 data-m-title style={{ margin: "0", maxWidth: "900px", fontWeight: "300", fontSize: "clamp(26px,3.9vw,58px)", lineHeight: "1.08", letterSpacing: "-0.02em", color: "#F1EEE0", textWrap: "pretty" }}>O atendimento faz parte do negócio.<span style={{ display: "block", fontFamily: "var(--font-serif)", fontStyle: "italic", fontWeight: "400", fontSize: "1.05em", color: "#FFFDEB" }}>Organizar essa rotina faz diferença.</span></h2>
+                <p data-m-text style={{ margin: "0", maxWidth: "660px", color: "#BFC7BC", fontSize: "clamp(14px,1.15vw,17px)", lineHeight: "1.75", fontWeight: "300", textWrap: "pretty" }}>Responder mensagens, registrar informações e acompanhar cada contato exige tempo. A Ecosflow nasceu dessa rotina: transformar necessidades observadas no trabalho em software que ajude a equipe a atender e se organizar.</p>
               </div>
               <div data-dim2 aria-hidden="true" style={{ position: "absolute", inset: "0", background: "#07120F", opacity: "0", pointerEvents: "none" }}></div>
             </section>
 
             <section data-scene="3" id="escala" data-screen-label="Escala" style={{ position: "relative", minHeight: "100svh", boxSizing: "border-box", background: "#07120F", color: "var(--bone)", display: "flex", alignItems: "center", padding: "clamp(50px,8vh,110px) clamp(20px,4.5vw,64px)", overflow: "hidden" }}>
               <div data-n-inner style={{ maxWidth: "1360px", margin: "0 auto", width: "100%" }}>
-                <p data-n-label style={{ margin: "0 0 clamp(16px,2.8vh,42px)", fontSize: "11px", fontWeight: "700", letterSpacing: "0.22em", textTransform: "uppercase", color: "#8A968B" }}>( a brecha )</p>
+                <p data-n-label style={{ margin: "0 0 clamp(16px,2.8vh,42px)", fontSize: "11px", fontWeight: "700", letterSpacing: "0.22em", textTransform: "uppercase", color: "#8A968B" }}>( tecnologia na advocacia )</p>
                 <div style={{ borderBottom: "1px solid rgba(228,225,206,0.14)" }}>
                   <div data-stat-row style={{ borderTop: "1px solid rgba(228,225,206,0.14)", padding: "clamp(16px,3vh,46px) 0", display: "flex", flexWrap: "wrap", alignItems: "flex-end", justifyContent: "space-between", gap: "14px 48px" }}>
                     <div style={{ display: "flex", alignItems: "baseline", gap: "11px", minWidth: "0" }}><span data-count data-to="77" style={{ fontSize: "min(clamp(56px,8.6vw,158px), 13.5vh)", fontWeight: "800", lineHeight: "0.9", letterSpacing: "-0.04em", color: "#F1EEE0" }}>77</span><span style={{ fontSize: "clamp(20px,2.3vw,40px)", fontWeight: "700", color: "#8A968B" }}>%</span></div>
-                    <p style={{ margin: "0", maxWidth: "420px", color: "#A8B2A6", fontSize: "clamp(13px,1.05vw,16px)", lineHeight: "1.6", textWrap: "pretty" }}>dos advogados acreditam que a IA vai assumir tarefas de marketing — <span style={{ color: "var(--amber)", fontWeight: "700" }}>só 27% de fato usam</span>. O comprador não precisa ser convencido de que IA serve, e sim de que esta funciona.</p>
+                    <p style={{ margin: "0", maxWidth: "420px", color: "#A8B2A6", fontSize: "clamp(13px,1.05vw,16px)", lineHeight: "1.6", textWrap: "pretty" }}>dos profissionais ouvidos no Relatório sobre o Impacto da IA no Direito 2026 afirmam usar IA com frequência no trabalho. O dado se refere ao uso profissional em geral.</p>
                   </div>
                   <div data-stat-row style={{ borderTop: "1px solid rgba(228,225,206,0.14)", padding: "clamp(16px,3vh,46px) 0", display: "flex", flexWrap: "wrap", alignItems: "flex-end", justifyContent: "space-between", gap: "14px 48px" }}>
-                    <div style={{ display: "flex", alignItems: "baseline", gap: "11px", minWidth: "0" }}><span style={{ fontSize: "clamp(16px,1.6vw,26px)", fontWeight: "700", color: "#8A968B" }}>~</span><span data-count data-to="90" style={{ fontSize: "min(clamp(56px,8.6vw,158px), 13.5vh)", fontWeight: "800", lineHeight: "0.9", letterSpacing: "-0.04em", color: "#F1EEE0" }}>90</span><span style={{ fontSize: "clamp(20px,2.3vw,40px)", fontWeight: "700", color: "#8A968B" }}>%</span></div>
-                    <p style={{ margin: "0", maxWidth: "420px", color: "#A8B2A6", fontSize: "clamp(13px,1.05vw,16px)", lineHeight: "1.6", textWrap: "pretty" }}>dos primeiros contatos com escritórios já começam no WhatsApp. Atender ali virou piso de entrada; ninguém resolveu o que acontece depois da primeira mensagem.</p>
+                    <div style={{ display: "flex", alignItems: "baseline", gap: "11px", minWidth: "0" }}><span data-count data-to="91" style={{ fontSize: "min(clamp(56px,8.6vw,158px), 13.5vh)", fontWeight: "800", lineHeight: "0.9", letterSpacing: "-0.04em", color: "#F1EEE0" }}>91</span><span style={{ fontSize: "clamp(20px,2.3vw,40px)", fontWeight: "700", color: "#8A968B" }}>%</span></div>
+                    <p style={{ margin: "0", maxWidth: "420px", color: "#A8B2A6", fontSize: "clamp(13px,1.05vw,16px)", lineHeight: "1.6", textWrap: "pretty" }}>dos entrevistados na mesma pesquisa relataram melhorias na qualidade técnica do trabalho final com o uso de IA. O dado expressa a percepção dos participantes da pesquisa.</p>
                   </div>
                   <div data-stat-row style={{ borderTop: "1px solid rgba(228,225,206,0.14)", padding: "clamp(16px,3vh,46px) 0", display: "flex", flexWrap: "wrap", alignItems: "flex-end", justifyContent: "space-between", gap: "14px 48px" }}>
                     <div style={{ display: "flex", alignItems: "baseline", gap: "11px", minWidth: "0" }}><span data-count data-to="600" style={{ fontSize: "min(clamp(56px,8.6vw,158px), 13.5vh)", fontWeight: "800", lineHeight: "0.9", letterSpacing: "-0.04em", color: "#F1EEE0" }}>600</span><span style={{ fontSize: "clamp(20px,2.3vw,40px)", fontWeight: "700", color: "#8A968B" }}>+</span></div>
-                    <p style={{ margin: "0", maxWidth: "420px", color: "#A8B2A6", fontSize: "clamp(13px,1.05vw,16px)", lineHeight: "1.6", textWrap: "pretty" }}>legaltechs ativas no Brasil. O mercado não é vazio: é fase de consolidação, em que ganha quem consegue ser verificável — não quem promete mais.</p>
+                    <p style={{ margin: "0", maxWidth: "420px", color: "#A8B2A6", fontSize: "clamp(13px,1.05vw,16px)", lineHeight: "1.6", textWrap: "pretty" }}>legaltechs ativas no Brasil, segundo artigo do Legal Control publicado em junho de 2026, que atribui o número à AB2L.</p>
                   </div>
                 </div>
-                <p style={{ margin: "clamp(14px,2.2vh,26px) 0 0", fontSize: "11.5px", color: "#9AA79C", letterSpacing: "0.04em" }}>Fontes: AB2L; levantamentos de uso de IA na advocacia e de canais de atendimento, consolidados na nossa pesquisa de mercado de agosto de 2026.</p>
+                <p style={{ margin: "clamp(14px,2.2vh,26px) 0 0", fontSize: "11.5px", color: "#9AA79C", letterSpacing: "0.04em" }}>Fontes: <a href="https://oabsp.org.br/noticia/26-03-26-1624-tres-em-cada-quatro-advogados-usam-inteligencia-artificial-no-trabalho" style={{ textDecoration: "underline", color: "#BFC7BC" }}>OAB SP · Relatório sobre o Impacto da IA no Direito 2026 (77% e 91%)</a>; <a href="https://legalcontrol.com.br/legaltech-brasil-2026/" style={{ textDecoration: "underline", color: "#BFC7BC" }}>Legal Control · 02/06/2026, com atribuição à AB2L (600+)</a>. Dados de mercado; não representam resultados do Ecos CRM.</p>
               </div>
             </section>
 
@@ -93,18 +93,18 @@ export default function Inicio() {
             <div style={{ display: "flex", flexWrap: "wrap", gap: "clamp(28px,5vw,80px)", alignItems: "flex-end" }}>
               <div style={{ flex: "1 1 520px", minWidth: "0", display: "flex", flexDirection: "column", gap: "20px" }}>
                 <p style={{ margin: "0", fontSize: "11px", fontWeight: "700", letterSpacing: "0.22em", textTransform: "uppercase", color: "var(--muted)" }}>( a casa )</p>
-                <h2 style={{ margin: "0", fontWeight: "300", fontSize: "clamp(30px,4.3vw,62px)", lineHeight: "1.06", letterSpacing: "-0.03em", color: "var(--ink)", textWrap: "pretty" }}>Ecosflow é a casa.<span style={{ display: "block", color: "#7C877E" }}>Ecos CRM é o primeiro produto dela.</span></h2>
+                <h2 style={{ margin: "0", fontWeight: "300", fontSize: "clamp(30px,4.3vw,62px)", lineHeight: "1.06", letterSpacing: "-0.03em", color: "var(--ink)", textWrap: "pretty" }}>Ecosflow é a empresa.<span style={{ display: "block", color: "#7C877E" }}>Ecos CRM é o primeiro produto dela.</span></h2>
               </div>
-              <p style={{ flex: "0 1 420px", minWidth: "280px", margin: "0", color: "var(--muted)", fontSize: "clamp(15px,1.15vw,17px)", lineHeight: "1.7", textWrap: "pretty" }}>Construímos software para o lado comercial e administrativo do escritório: quem chegou, quem esfriou, quem precisa de contrato, quem precisa saber do andamento, quem precisa pagar. Nada disso é atividade privativa da advocacia — e essa fronteira é escolha de projeto, não limitação.</p>
+              <p style={{ flex: "0 1 420px", minWidth: "280px", margin: "0", color: "var(--muted)", fontSize: "clamp(15px,1.15vw,17px)", lineHeight: "1.7", textWrap: "pretty" }}>Reunimos desenvolvimento de software e experiência de operação para criar ferramentas de atendimento e gestão comercial. O Ecos CRM é nosso primeiro SaaS. A Academy é a frente de formação e onboarding que estamos preparando para os usuários.</p>
             </div>
 
-            <p style={{ margin: "0", fontFamily: "var(--font-serif)", fontStyle: "italic", fontSize: "clamp(22px,3.1vw,44px)", lineHeight: "1.22", letterSpacing: "-0.01em", color: "var(--ink)", maxWidth: "24ch", borderLeft: "2px solid var(--accent)", paddingLeft: "clamp(18px,2.5vw,32px)" }}>O mercado está construindo IA que escreve Direito. Nós construímos a que cuida do negócio ao redor dele.</p>
+            <p style={{ margin: "0", fontFamily: "var(--font-serif)", fontStyle: "italic", fontSize: "clamp(22px,3.1vw,44px)", lineHeight: "1.22", letterSpacing: "-0.01em", color: "var(--ink)", maxWidth: "24ch", borderLeft: "2px solid var(--accent)", paddingLeft: "clamp(18px,2.5vw,32px)" }}>Começamos por uma necessidade real e desenvolvemos o produto junto de quem o usa.</p>
 
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(min(100%,280px),1fr))", gap: "14px" }}>
               <article style={{ background: "var(--card)", border: "1px solid var(--line)", borderRadius: "20px", padding: "clamp(24px,2.6vw,36px)", display: "flex", flexDirection: "column", gap: "12px" }}>
                 <span style={{ fontSize: "11px", fontWeight: "800", letterSpacing: "0.16em", color: "var(--accent)" }}>PILAR 01</span>
-                <h3 style={{ margin: "0", fontSize: "clamp(20px,1.9vw,26px)", fontWeight: "700", letterSpacing: "-0.02em", color: "var(--ink)" }}>Não some ninguém</h3>
-                <p style={{ margin: "0", color: "var(--muted)", fontSize: "14.5px", lineHeight: "1.65" }}>O agente responde na hora, qualifica com critério e avisa quando alguém ficou sem resposta — com o resumo da conversa e a mensagem de retomada pronta.</p>
+                <h3 style={{ margin: "0", fontSize: "clamp(20px,1.9vw,26px)", fontWeight: "700", letterSpacing: "-0.02em", color: "var(--ink)" }}>Rotina organizada</h3>
+                <p style={{ margin: "0", color: "var(--muted)", fontSize: "14.5px", lineHeight: "1.65" }}>Desenvolvemos ferramentas para reunir conversas, contatos e tarefas e facilitar o acompanhamento do atendimento.</p>
               </article>
               <article style={{ background: "var(--card)", border: "1px solid var(--line)", borderRadius: "20px", padding: "clamp(24px,2.6vw,36px)", display: "flex", flexDirection: "column", gap: "12px" }}>
                 <span style={{ fontSize: "11px", fontWeight: "800", letterSpacing: "0.16em", color: "var(--accent)" }}>PILAR 02</span>
@@ -114,7 +114,7 @@ export default function Inicio() {
               <article style={{ background: "var(--card)", border: "1px solid var(--line)", borderRadius: "20px", padding: "clamp(24px,2.6vw,36px)", display: "flex", flexDirection: "column", gap: "12px" }}>
                 <span style={{ fontSize: "11px", fontWeight: "800", letterSpacing: "0.16em", color: "var(--accent)" }}>PILAR 03</span>
                 <h3 style={{ margin: "0", fontSize: "clamp(20px,1.9vw,26px)", fontWeight: "700", letterSpacing: "-0.02em", color: "var(--ink)" }}>Tem alguém do outro lado</h3>
-                <p style={{ margin: "0", color: "var(--muted)", fontSize: "14.5px", lineHeight: "1.65" }}>Quem atende quando quebra é quem construiu. Canal direto e prazo de resposta declarado — enquanto a equipe for pequena o bastante para isso ser verdade.</p>
+                <p style={{ margin: "0", color: "var(--muted)", fontSize: "14.5px", lineHeight: "1.65" }}>A experiência de quem atende clientes orienta o desenvolvimento e ajuda a definir as próximas melhorias.</p>
               </article>
             </div>
           </div>
@@ -125,9 +125,9 @@ export default function Inicio() {
             <div style={{ display: "flex", flexWrap: "wrap", gap: "24px", alignItems: "flex-end", justifyContent: "space-between" }}>
               <div style={{ flex: "1 1 480px", minWidth: "0", display: "flex", flexDirection: "column", gap: "18px" }}>
                 <p style={{ margin: "0", fontSize: "11px", fontWeight: "700", letterSpacing: "0.22em", textTransform: "uppercase", color: "var(--muted)" }}>( soluções )</p>
-                <h2 style={{ margin: "0", fontWeight: "300", fontSize: "clamp(28px,3.8vw,54px)", lineHeight: "1.08", letterSpacing: "-0.03em", color: "var(--ink)", textWrap: "pretty" }}>Um produto em produção.<span style={{ display: "block", color: "#7C877E" }}>Os próximos nascem do mesmo motor.</span></h2>
+                <h2 style={{ margin: "0", fontWeight: "300", fontSize: "clamp(28px,3.8vw,54px)", lineHeight: "1.08", letterSpacing: "-0.03em", color: "var(--ink)", textWrap: "pretty" }}>Ecos CRM: atendimento e gestão comercial.<span style={{ display: "block", color: "#7C877E" }}>O primeiro SaaS da Ecosflow.</span></h2>
               </div>
-              <p style={{ flex: "0 1 360px", minWidth: "260px", margin: "0", color: "var(--muted)", fontSize: "14.5px", lineHeight: "1.65" }}>Teste que todo produto da casa precisa passar para existir: resolver uma etapa da vida comercial do escritório sem produzir conteúdo jurídico substantivo.</p>
+              <p style={{ flex: "0 1 360px", minWidth: "260px", margin: "0", color: "var(--muted)", fontSize: "14.5px", lineHeight: "1.65" }}>Um espaço para acompanhar conversas no WhatsApp, organizar contatos e configurar automações de atendimento.</p>
             </div>
 
             <article style={{ background: "var(--pine)", color: "var(--bone)", borderRadius: "26px", padding: "clamp(26px,3.4vw,52px)", display: "flex", flexWrap: "wrap", gap: "clamp(28px,4vw,60px)" }}>
@@ -143,60 +143,46 @@ export default function Inicio() {
                   <h3 style={{ margin: "0", fontSize: "clamp(26px,2.8vw,40px)", fontWeight: "700", letterSpacing: "-0.03em", color: "#F1EEE0" }}>Ecos CRM</h3>
                   <span style={{ display: "inline-flex", alignItems: "center", gap: "7px", border: "1px solid rgba(228,225,206,0.3)", borderRadius: "999px", padding: "5px 12px", fontSize: "11px", fontWeight: "700", letterSpacing: "0.1em", textTransform: "uppercase", color: "#BFC7BC" }}><span aria-hidden="true" style={{ width: "7px", height: "7px", borderRadius: "50%", background: "var(--amber)", animation: "softBlink 2.2s ease-in-out infinite" }}></span>Em produção</span>
                 </div>
-                <p style={{ margin: "0", color: "#BFC7BC", fontSize: "clamp(15px,1.15vw,17px)", lineHeight: "1.7", maxWidth: "46ch", textWrap: "pretty" }}>O lead chega pelo WhatsApp, é atendido na hora, é qualificado com nota e justificativa, e chega até o contrato sem depender de você estar livre. Quando esfria, o sistema avisa — e sugere o que dizer.</p>
+                <p style={{ margin: "0", color: "#BFC7BC", fontSize: "clamp(15px,1.15vw,17px)", lineHeight: "1.7", maxWidth: "46ch", textWrap: "pretty" }}>O Ecos CRM reúne atendimento pelo WhatsApp, funil comercial e agentes de IA. A equipe acompanha o histórico, revisa a qualificação dos contatos e configura os fluxos de atendimento e retomada.</p>
                 <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
                   <span style={{ border: "1px solid rgba(228,225,206,0.22)", borderRadius: "999px", padding: "6px 13px", fontSize: "11.5px", fontWeight: "600", color: "#BFC7BC" }}>WhatsApp</span>
                   <span style={{ border: "1px solid rgba(228,225,206,0.22)", borderRadius: "999px", padding: "6px 13px", fontSize: "11.5px", fontWeight: "600", color: "#BFC7BC" }}>Agenda</span>
                   <span style={{ border: "1px solid rgba(228,225,206,0.22)", borderRadius: "999px", padding: "6px 13px", fontSize: "11.5px", fontWeight: "600", color: "#BFC7BC" }}>Cobrança</span>
                   <span style={{ border: "1px solid rgba(228,225,206,0.22)", borderRadius: "999px", padding: "6px 13px", fontSize: "11.5px", fontWeight: "600", color: "#BFC7BC" }}>Assinatura</span>
-                  <span style={{ border: "1px solid rgba(228,225,206,0.22)", borderRadius: "999px", padding: "6px 13px", fontSize: "11.5px", fontWeight: "600", color: "#BFC7BC" }}>Aplicativo Android e iPhone</span>
+                  <span style={{ border: "1px solid rgba(228,225,206,0.22)", borderRadius: "999px", padding: "6px 13px", fontSize: "11.5px", fontWeight: "600", color: "#BFC7BC" }}>Acesso pelo navegador no celular</span>
                 </div>
                 <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "14px 24px" }}>
-                  <Link href="/entrar" style={{ display: "inline-flex", alignItems: "center", gap: "12px", background: "#E7E3D3", color: "#0F1A15", borderRadius: "999px", padding: "6px 6px 6px 20px", fontSize: "13.5px", fontWeight: "700", transition: "gap 0.35s cubic-bezier(0.22,1,0.36,1), background 0.3s" }} className="hv-3">Entrar ou criar conta<span aria-hidden="true" style={{ width: "32px", height: "32px", borderRadius: "50%", background: "var(--accent)", color: "#F6F2E8", display: "grid", placeItems: "center", fontSize: "14px" }}>→</span></Link>
-                  <a href="#demo" style={{ display: "inline-flex", alignItems: "center", gap: "9px", fontSize: "13.5px", fontWeight: "700", color: "#F1EEE0", transition: "gap 0.3s" }} className="hv-4">Ver o agente trabalhar <span aria-hidden="true">↓</span></a>
+                  <Link href="/entrar" style={{ display: "inline-flex", alignItems: "center", gap: "12px", background: "#E7E3D3", color: "#0F1A15", borderRadius: "999px", padding: "6px 6px 6px 20px", fontSize: "13.5px", fontWeight: "700", transition: "gap 0.35s cubic-bezier(0.22,1,0.36,1), background 0.3s" }} className="hv-3">Acessar o Ecos CRM<span aria-hidden="true" style={{ width: "32px", height: "32px", borderRadius: "50%", background: "var(--accent)", color: "#F6F2E8", display: "grid", placeItems: "center", fontSize: "14px" }}>→</span></Link>
+                  <a href="#demo" style={{ display: "inline-flex", alignItems: "center", gap: "9px", fontSize: "13.5px", fontWeight: "700", color: "#F1EEE0", transition: "gap 0.3s" }} className="hv-4">Ver demonstração ilustrativa <span aria-hidden="true">↓</span></a>
                 </div>
               </div>
 
               <div style={{ flex: "1 1 320px", minWidth: "min(100%,290px)", display: "flex", flexDirection: "column", gap: "12px" }}>
                 <div style={{ display: "flex", gap: "14px", alignItems: "flex-start", background: "rgba(228,225,206,0.06)", border: "1px solid rgba(228,225,206,0.16)", borderRadius: "16px", padding: "16px 18px" }}>
                   <span aria-hidden="true" style={{ fontSize: "12px", fontWeight: "800", color: "var(--amber)", flex: "none", paddingTop: "2px" }}>01</span>
-                  <div style={{ display: "flex", flexDirection: "column", gap: "3px" }}><p style={{ margin: "0", fontSize: "14.5px", fontWeight: "700", color: "#F1EEE0" }}>Atende e qualifica</p><p style={{ margin: "0", fontSize: "13.5px", color: "#A8B2A6", lineHeight: "1.55" }}>Responde na hora, entende o caso e pontua o lead pelo método DIUAD.</p></div>
+                  <div style={{ display: "flex", flexDirection: "column", gap: "3px" }}><p style={{ margin: "0", fontSize: "14.5px", fontWeight: "700", color: "#F1EEE0" }}>Atende e qualifica</p><p style={{ margin: "0", fontSize: "13.5px", color: "#A8B2A6", lineHeight: "1.55" }}>Ajuda na triagem e na qualificação pelo método DIUAD, conforme as informações da conversa.</p></div>
                 </div>
                 <div style={{ display: "flex", gap: "14px", alignItems: "flex-start", background: "rgba(228,225,206,0.06)", border: "1px solid rgba(228,225,206,0.16)", borderRadius: "16px", padding: "16px 18px" }}>
                   <span aria-hidden="true" style={{ fontSize: "12px", fontWeight: "800", color: "var(--amber)", flex: "none", paddingTop: "2px" }}>02</span>
-                  <div style={{ display: "flex", flexDirection: "column", gap: "3px" }}><p style={{ margin: "0", fontSize: "14.5px", fontWeight: "700", color: "#F1EEE0" }}>Conduz até o contrato</p><p style={{ margin: "0", fontSize: "13.5px", color: "#A8B2A6", lineHeight: "1.55" }}>Move o cartão de etapa, cobra documento, marca reunião e lembra do pagamento.</p></div>
+                  <div style={{ display: "flex", flexDirection: "column", gap: "3px" }}><p style={{ margin: "0", fontSize: "14.5px", fontWeight: "700", color: "#F1EEE0" }}>Acompanha as próximas etapas</p><p style={{ margin: "0", fontSize: "13.5px", color: "#A8B2A6", lineHeight: "1.55" }}>Organiza o funil e permite configurar fluxos de documentos, agenda e lembretes com as integrações do escritório.</p></div>
                 </div>
                 <div style={{ display: "flex", gap: "14px", alignItems: "flex-start", background: "rgba(228,225,206,0.06)", border: "1px solid rgba(228,225,206,0.16)", borderRadius: "16px", padding: "16px 18px" }}>
                   <span aria-hidden="true" style={{ fontSize: "12px", fontWeight: "800", color: "var(--amber)", flex: "none", paddingTop: "2px" }}>03</span>
-                  <div style={{ display: "flex", flexDirection: "column", gap: "3px" }}><p style={{ margin: "0", fontSize: "14.5px", fontWeight: "700", color: "#F1EEE0" }}>Mostra o que se perde</p><p style={{ margin: "0", fontSize: "13.5px", color: "#A8B2A6", lineHeight: "1.55" }}>Quantos procuraram no mês, quantos viraram cliente e quanto ficou na mesa.</p></div>
+                  <div style={{ display: "flex", flexDirection: "column", gap: "3px" }}><p style={{ margin: "0", fontSize: "14.5px", fontWeight: "700", color: "#F1EEE0" }}>Acompanha o funil</p><p style={{ margin: "0", fontSize: "13.5px", color: "#A8B2A6", lineHeight: "1.55" }}>Reúne indicadores de contatos e conversão para acompanhar a operação comercial.</p></div>
                 </div>
                 <div style={{ marginTop: "6px", border: "1px solid var(--accent)", borderRadius: "16px", padding: "16px 18px", background: "rgba(184,64,28,0.12)", display: "flex", flexDirection: "column", gap: "8px" }}>
-                  <p style={{ margin: "0", fontSize: "10.5px", fontWeight: "800", letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--amber)" }}>Recuperação de lead frio</p>
+                  <p style={{ margin: "0", fontSize: "10.5px", fontWeight: "800", letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--amber)" }}>Exemplo fictício · retomada de contato</p>
                   <p style={{ margin: "0", fontSize: "14px", color: "#F1EEE0", lineHeight: "1.55" }}>Parada há 9 dias · “vou conversar com meu sócio e retorno” · R$ 11.500 em análise contratual.</p>
                   <p style={{ margin: "0", fontSize: "13px", color: "#BFC7BC", lineHeight: "1.55", fontStyle: "italic" }}>Mensagem sugerida: “Oi, Bárbara. Você ia alinhar com o seu sócio a análise do contrato de exclusividade. Consigo segurar a agenda de quinta se ainda fizer sentido.”</p>
                 </div>
               </div>
             </article>
 
-            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-              <p style={{ margin: "0", fontSize: "11px", fontWeight: "700", letterSpacing: "0.22em", textTransform: "uppercase", color: "var(--muted)" }}>Próximos produtos da casa</p>
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(min(100%,230px),1fr))", gap: "12px" }}>
-                <div style={{ border: "1px dashed var(--line)", borderRadius: "18px", padding: "22px 24px", display: "flex", flexDirection: "column", gap: "8px", background: "rgba(252,250,243,0.5)" }}>
-                  <span style={{ fontSize: "10.5px", fontWeight: "800", letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--muted)" }}>Em estudo</span>
-                  <p style={{ margin: "0", fontSize: "17px", fontWeight: "700", color: "var(--ink)", letterSpacing: "-0.01em" }}>Formalizar</p>
-                  <p style={{ margin: "0", fontSize: "13.5px", color: "var(--muted)", lineHeight: "1.55" }}>Do aceite ao documento assinado, com revisão humana antes de qualquer envio.</p>
-                </div>
-                <div style={{ border: "1px dashed var(--line)", borderRadius: "18px", padding: "22px 24px", display: "flex", flexDirection: "column", gap: "8px", background: "rgba(252,250,243,0.5)" }}>
-                  <span style={{ fontSize: "10.5px", fontWeight: "800", letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--muted)" }}>Em estudo</span>
-                  <p style={{ margin: "0", fontSize: "17px", fontWeight: "700", color: "var(--ink)", letterSpacing: "-0.01em" }}>Manter informado</p>
-                  <p style={{ margin: "0", fontSize: "13.5px", color: "var(--muted)", lineHeight: "1.55" }}>O cliente sabe o que mudou e qual é o próximo passo, no número do próprio escritório.</p>
-                </div>
-                <div style={{ border: "1px dashed var(--line)", borderRadius: "18px", padding: "22px 24px", display: "flex", flexDirection: "column", gap: "8px", background: "rgba(252,250,243,0.5)" }}>
-                  <span style={{ fontSize: "10.5px", fontWeight: "800", letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--muted)" }}>Em estudo</span>
-                  <p style={{ margin: "0", fontSize: "17px", fontWeight: "700", color: "var(--ink)", letterSpacing: "-0.01em" }}>Ser encontrado</p>
-                  <p style={{ margin: "0", fontSize: "13.5px", color: "var(--muted)", lineHeight: "1.55" }}>Presença com constância, dentro do que o Provimento 205 permite ao escritório.</p>
-                </div>
-              </div>
+            <div style={{ border: "1px solid var(--line)", borderRadius: "18px", padding: "24px", display: "flex", flexDirection: "column", gap: "12px" }}>
+              <p style={{ margin: "0", fontSize: "11px", fontWeight: "700", letterSpacing: "0.16em", color: "var(--muted)" }}>FORMAÇÃO · EM PREPARAÇÃO</p>
+              <h3 style={{ margin: "0", fontSize: "24px", color: "var(--ink)" }}>Ecosflow Academy</h3>
+              <p style={{ margin: "0", color: "var(--muted)", lineHeight: "1.65" }}>A área de aprendizagem da Ecosflow, com conteúdo de onboarding para orientar os primeiros passos no Ecos CRM.</p>
+              <Link href="/academy" style={{ color: "var(--accent)", fontWeight: "700" }}>Conhecer a Academy →</Link>
             </div>
           </div>
         </section>
@@ -238,33 +224,33 @@ export default function Inicio() {
         <section id="regras" data-screen-label="Regras" style={{ position: "relative", zIndex: "2", background: "var(--paper2)", padding: "clamp(80px,11vw,150px) clamp(20px,4.5vw,64px)" }}>
           <div style={{ maxWidth: "1280px", margin: "0 auto", display: "flex", flexWrap: "wrap", gap: "clamp(36px,5vw,80px)", alignItems: "flex-start" }}>
             <div style={{ flex: "1 1 320px", minWidth: "min(100%,280px)", display: "flex", flexDirection: "column", gap: "18px" }}>
-              <p style={{ margin: "0", fontSize: "11px", fontWeight: "700", letterSpacing: "0.22em", textTransform: "uppercase", color: "var(--muted)" }}>( as regras )</p>
-              <h2 style={{ margin: "0", fontWeight: "300", fontSize: "clamp(28px,3.8vw,54px)", lineHeight: "1.06", letterSpacing: "-0.03em", color: "var(--ink)", textWrap: "pretty" }}>Nascido dentro das regras.</h2>
-              <p style={{ margin: "0", maxWidth: "38ch", color: "var(--muted)", fontSize: "15px", lineHeight: "1.7", textWrap: "pretty" }}>Conformidade aqui não é página de FAQ — é arquitetura de produto. O comprador jurídico compra software de IA com medo, e tem motivo.</p>
+              <p style={{ margin: "0", fontSize: "11px", fontWeight: "700", letterSpacing: "0.22em", textTransform: "uppercase", color: "var(--muted)" }}>( uso responsável )</p>
+              <h2 style={{ margin: "0", fontWeight: "300", fontSize: "clamp(28px,3.8vw,54px)", lineHeight: "1.06", letterSpacing: "-0.03em", color: "var(--ink)", textWrap: "pretty" }}>Controle sobre o uso da tecnologia.</h2>
+              <p style={{ margin: "0", maxWidth: "38ch", color: "var(--muted)", fontSize: "15px", lineHeight: "1.7", textWrap: "pretty" }}>O Ecos CRM oferece recursos para acompanhar o atendimento, revisar sugestões da IA e controlar o acesso da equipe.</p>
             </div>
             <div style={{ flex: "1 1 480px", minWidth: "min(100%,300px)", display: "flex", flexDirection: "column" }}>
               <div style={{ borderTop: "1px solid var(--line)", padding: "clamp(22px,2.6vw,36px) 0", display: "grid", gridTemplateColumns: "56px 1fr", gap: "14px" }}>
                 <span style={{ fontFamily: "var(--font-mono)", fontSize: "12px", color: "var(--accent)", paddingTop: "4px" }}>001</span>
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                  <h3 style={{ margin: "0", fontSize: "clamp(16px,1.3vw,19px)", fontWeight: "700", color: "var(--ink)" }}>Recomendação OAB nº 001/2024</h3>
-                  <p style={{ margin: "0", color: "var(--muted)", fontSize: "14px", lineHeight: "1.65", textWrap: "pretty" }}>Supervisão humana, verificação do que a IA produz e comunicação por escrito ao cliente sobre o uso. O modo assistido é a expressão dessa norma dentro do produto — configuração padrão, não recurso avançado.</p>
+                  <h3 style={{ margin: "0", fontSize: "clamp(16px,1.3vw,19px)", fontWeight: "700", color: "var(--ink)" }}>Revisão humana</h3>
+                  <p style={{ margin: "0", color: "var(--muted)", fontSize: "14px", lineHeight: "1.65", textWrap: "pretty" }}>No modo assistido, as mensagens propostas pelo agente ficam para revisão antes do envio. A equipe pode aprovar, ajustar ou descartar a sugestão.</p>
                 </div>
               </div>
               <div style={{ borderTop: "1px solid var(--line)", padding: "clamp(22px,2.6vw,36px) 0", display: "grid", gridTemplateColumns: "56px 1fr", gap: "14px" }}>
                 <span style={{ fontFamily: "var(--font-mono)", fontSize: "12px", color: "var(--accent)", paddingTop: "4px" }}>002</span>
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                  <h3 style={{ margin: "0", fontSize: "clamp(16px,1.3vw,19px)", fontWeight: "700", color: "var(--ink)" }}>Provimento OAB 205/2021</h3>
-                  <p style={{ margin: "0", color: "var(--muted)", fontSize: "14px", lineHeight: "1.65", textWrap: "pretty" }}>Sobriedade e discrição na comunicação do escritório, sem promessa de resultado nem captação indevida. A regra entra embutida no que o produto permite publicar em nome do cliente.</p>
+                  <h3 style={{ margin: "0", fontSize: "clamp(16px,1.3vw,19px)", fontWeight: "700", color: "var(--ink)" }}>Configuração do atendimento</h3>
+                  <p style={{ margin: "0", color: "var(--muted)", fontSize: "14px", lineHeight: "1.65", textWrap: "pretty" }}>O escritório define orientações e fluxos de atendimento. O uso de automações exige acompanhamento da equipe e revisão das mensagens e informações fornecidas ao agente.</p>
                 </div>
               </div>
               <div style={{ borderTop: "1px solid var(--line)", borderBottom: "1px solid var(--line)", padding: "clamp(22px,2.6vw,36px) 0", display: "grid", gridTemplateColumns: "56px 1fr", gap: "14px" }}>
                 <span style={{ fontFamily: "var(--font-mono)", fontSize: "12px", color: "var(--accent)", paddingTop: "4px" }}>003</span>
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                  <h3 style={{ margin: "0", fontSize: "clamp(16px,1.3vw,19px)", fontWeight: "700", color: "var(--ink)" }}>LGPD e sigilo profissional</h3>
-                  <p style={{ margin: "0", color: "var(--muted)", fontSize: "14px", lineHeight: "1.65", textWrap: "pretty" }}>Base legal, contrato de tratamento com cada fornecedor de IA, controle de acesso por perfil e anonimização antes da chamada do modelo. Dado de cliente de escritório não treina modelo.</p>
+                  <h3 style={{ margin: "0", fontSize: "clamp(16px,1.3vw,19px)", fontWeight: "700", color: "var(--ink)" }}>Acesso e dados</h3>
+                  <p style={{ margin: "0", color: "var(--muted)", fontSize: "14px", lineHeight: "1.65", textWrap: "pretty" }}>O CRM possui controle de acesso por perfil e separação de dados entre escritórios. As integrações e o uso de IA precisam ser configurados considerando as informações tratadas em cada operação.</p>
                 </div>
               </div>
-              <p style={{ margin: "clamp(22px,3vw,36px) 0 0", fontFamily: "var(--font-serif)", fontStyle: "italic", fontSize: "clamp(18px,1.9vw,25px)", color: "var(--ink)", lineHeight: "1.35" }}>A IA não advoga e não substitui o advogado. Ela cuida do que acontece antes e depois do Direito.</p>
+              <p style={{ margin: "clamp(22px,3vw,36px) 0 0", fontFamily: "var(--font-serif)", fontStyle: "italic", fontSize: "clamp(18px,1.9vw,25px)", color: "var(--ink)", lineHeight: "1.35" }}>A equipe acompanha o atendimento e mantém a responsabilidade pelas decisões profissionais.</p>
             </div>
           </div>
         </section>
@@ -274,9 +260,9 @@ export default function Inicio() {
             <div style={{ display: "flex", flexWrap: "wrap", gap: "24px", alignItems: "flex-end", justifyContent: "space-between" }}>
               <div style={{ flex: "1 1 440px", minWidth: "0", display: "flex", flexDirection: "column", gap: "16px" }}>
                 <p style={{ margin: "0", fontSize: "11px", fontWeight: "700", letterSpacing: "0.22em", textTransform: "uppercase", color: "var(--muted)" }}>( planos )</p>
-                <h2 style={{ margin: "0", fontWeight: "300", fontSize: "clamp(28px,3.8vw,54px)", lineHeight: "1.06", letterSpacing: "-0.03em", color: "var(--ink)" }}>Tabela de lançamento.</h2>
+                <h2 style={{ margin: "0", fontWeight: "300", fontSize: "clamp(28px,3.8vw,54px)", lineHeight: "1.06", letterSpacing: "-0.03em", color: "var(--ink)" }}>Planos do Ecos CRM.</h2>
               </div>
-              <p style={{ flex: "0 1 380px", minWidth: "260px", margin: "0", color: "var(--muted)", fontSize: "14.5px", lineHeight: "1.65" }}>Assinatura mensal do Ecos CRM, com franquia de conversas por plano. A implantação é cobrada à parte, conforme o escritório. Sem fidelidade.</p>
+              <p style={{ flex: "0 1 380px", minWidth: "260px", margin: "0", color: "var(--muted)", fontSize: "14.5px", lineHeight: "1.65" }}>Valores previstos para a assinatura mensal do Ecos CRM. A contratação está em preparação; limites de uso, recursos e condições serão apresentados antes da abertura do cadastro.</p>
             </div>
 
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(min(100%,270px),1fr))", gap: "14px", alignItems: "start" }}>
@@ -287,25 +273,25 @@ export default function Inicio() {
                   <p style={{ margin: "0", fontSize: "13.5px", color: "var(--muted)", lineHeight: "1.55" }}>Para o escritório que quer parar de perder mensagem.</p>
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", gap: "9px", borderTop: "1px solid var(--line)", paddingTop: "16px" }}>
-                  <p style={{ margin: "0", fontSize: "13.5px", color: "var(--ink)", lineHeight: "1.5" }}>Um número de WhatsApp atendido pelo agente</p>
-                  <p style={{ margin: "0", fontSize: "13.5px", color: "var(--ink)", lineHeight: "1.5" }}>Qualificação DIUAD com justificativa escrita</p>
-                  <p style={{ margin: "0", fontSize: "13.5px", color: "var(--ink)", lineHeight: "1.5" }}>Pipeline e painel de conversão</p>
-                  <p style={{ margin: "0", fontSize: "13.5px", color: "var(--ink)", lineHeight: "1.5" }}>Aplicativo Android e iPhone</p>
+                  <p style={{ margin: "0", fontSize: "13.5px", color: "var(--ink)", lineHeight: "1.5" }}>1.000 mensagens por mês</p>
+                  <p style={{ margin: "0", fontSize: "13.5px", color: "var(--ink)", lineHeight: "1.5" }}>5 milhões de tokens de IA e 60 minutos de transcrição</p>
+                  <p style={{ margin: "0", fontSize: "13.5px", color: "var(--ink)", lineHeight: "1.5" }}>1 linha de WhatsApp e 1 atendente</p>
+                  <p style={{ margin: "0", fontSize: "13.5px", color: "var(--ink)", lineHeight: "1.5" }}>Histórico de 30 dias</p>
                 </div>
                 <a href="#workshop" style={{ marginTop: "auto", textAlign: "center", border: "1px solid var(--ink)", color: "var(--ink)", borderRadius: "999px", padding: "13px 22px", fontSize: "13.5px", fontWeight: "700", transition: "background 0.3s, color 0.3s" }} className="hv-7">Quero este</a>
               </article>
 
               <article style={{ background: "var(--pine)", color: "var(--bone)", border: "1px solid var(--pine)", borderRadius: "22px", padding: "clamp(24px,2.6vw,34px)", display: "flex", flexDirection: "column", gap: "18px", boxShadow: "0 30px 60px -40px rgba(12,42,32,0.8)" }}>
                 <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
-                  <p style={{ margin: "0", display: "flex", alignItems: "center", gap: "9px", flexWrap: "wrap", fontSize: "11px", fontWeight: "800", letterSpacing: "0.16em", textTransform: "uppercase", color: "var(--amber)" }}>Operação<span style={{ background: "var(--accent)", color: "#F6F2E8", borderRadius: "999px", padding: "3px 9px", fontSize: "9.5px", letterSpacing: "0.1em" }}>MAIS ESCOLHIDO</span></p>
+                  <p style={{ margin: "0", display: "flex", alignItems: "center", gap: "9px", flexWrap: "wrap", fontSize: "11px", fontWeight: "800", letterSpacing: "0.16em", textTransform: "uppercase", color: "var(--amber)" }}>Operação<span style={{ background: "var(--accent)", color: "#F6F2E8", borderRadius: "999px", padding: "3px 9px", fontSize: "9.5px", letterSpacing: "0.1em" }}>OPERAÇÃO EM EQUIPE</span></p>
                   <p style={{ margin: "0", fontSize: "clamp(30px,3vw,40px)", fontWeight: "800", letterSpacing: "-0.03em", color: "#F1EEE0" }}>R$ 597<span style={{ fontSize: "0.38em", fontWeight: "600", color: "#A8B2A6" }}>/mês</span></p>
                   <p style={{ margin: "0", fontSize: "13.5px", color: "#A8B2A6", lineHeight: "1.55" }}>Para o escritório com mais de uma pessoa no atendimento.</p>
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", gap: "9px", borderTop: "1px solid rgba(228,225,206,0.16)", paddingTop: "16px" }}>
-                  <p style={{ margin: "0", fontSize: "13.5px", color: "#E4E1CE", lineHeight: "1.5" }}>Tudo do plano Base</p>
-                  <p style={{ margin: "0", fontSize: "13.5px", color: "#E4E1CE", lineHeight: "1.5" }}>Follow-up e recuperação de lead frio</p>
-                  <p style={{ margin: "0", fontSize: "13.5px", color: "#E4E1CE", lineHeight: "1.5" }}>Agenda, cobrança e assinatura integradas</p>
-                  <p style={{ margin: "0", fontSize: "13.5px", color: "#E4E1CE", lineHeight: "1.5" }}>Quatro perfis de acesso e modo assistido por equipe</p>
+                  <p style={{ margin: "0", fontSize: "13.5px", color: "#E4E1CE", lineHeight: "1.5" }}>3.500 mensagens por mês</p>
+                  <p style={{ margin: "0", fontSize: "13.5px", color: "#E4E1CE", lineHeight: "1.5" }}>12 milhões de tokens de IA e 200 minutos de transcrição</p>
+                  <p style={{ margin: "0", fontSize: "13.5px", color: "#E4E1CE", lineHeight: "1.5" }}>1 linha de WhatsApp e 3 atendentes</p>
+                  <p style={{ margin: "0", fontSize: "13.5px", color: "#E4E1CE", lineHeight: "1.5" }}>Base de documentos para a IA</p>
                 </div>
                 <a href="#workshop" style={{ marginTop: "auto", textAlign: "center", background: "#E7E3D3", color: "#0F1A15", borderRadius: "999px", padding: "13px 22px", fontSize: "13.5px", fontWeight: "700", transition: "background 0.3s" }} className="hv-8">Quero este</a>
               </article>
@@ -314,30 +300,19 @@ export default function Inicio() {
                 <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
                   <p style={{ margin: "0", fontSize: "11px", fontWeight: "800", letterSpacing: "0.16em", textTransform: "uppercase", color: "var(--muted)" }}>Escala</p>
                   <p style={{ margin: "0", fontSize: "clamp(30px,3vw,40px)", fontWeight: "800", letterSpacing: "-0.03em", color: "var(--ink)" }}>R$ 1.197<span style={{ fontSize: "0.38em", fontWeight: "600", color: "var(--muted)" }}>/mês</span></p>
-                  <p style={{ margin: "0", fontSize: "13.5px", color: "var(--muted)", lineHeight: "1.55" }}>Para quem tem área comercial e exige prazo de resposta.</p>
+                  <p style={{ margin: "0", fontSize: "13.5px", color: "var(--muted)", lineHeight: "1.55" }}>Para operações com mais fluxos e necessidades de configuração.</p>
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", gap: "9px", borderTop: "1px solid var(--line)", paddingTop: "16px" }}>
-                  <p style={{ margin: "0", fontSize: "13.5px", color: "var(--ink)", lineHeight: "1.5" }}>Tudo da Operação</p>
-                  <p style={{ margin: "0", fontSize: "13.5px", color: "var(--ink)", lineHeight: "1.5" }}>Fluxos configurados por área de atuação</p>
-                  <p style={{ margin: "0", fontSize: "13.5px", color: "var(--ink)", lineHeight: "1.5" }}>Base de conhecimento com busca semântica</p>
-                  <p style={{ margin: "0", fontSize: "13.5px", color: "var(--ink)", lineHeight: "1.5" }}>Canal direto com quem construiu, com prazo declarado</p>
+                  <p style={{ margin: "0", fontSize: "13.5px", color: "var(--ink)", lineHeight: "1.5" }}>10.000 mensagens por mês</p>
+                  <p style={{ margin: "0", fontSize: "13.5px", color: "var(--ink)", lineHeight: "1.5" }}>25 milhões de tokens de IA e 600 minutos de transcrição</p>
+                  <p style={{ margin: "0", fontSize: "13.5px", color: "var(--ink)", lineHeight: "1.5" }}>2 linhas de WhatsApp e 8 atendentes</p>
+                  <p style={{ margin: "0", fontSize: "13.5px", color: "var(--ink)", lineHeight: "1.5" }}>Base de documentos para a IA</p>
                 </div>
                 <a href="#workshop" style={{ marginTop: "auto", textAlign: "center", border: "1px solid var(--ink)", color: "var(--ink)", borderRadius: "999px", padding: "13px 22px", fontSize: "13.5px", fontWeight: "700", transition: "background 0.3s, color 0.3s" }} className="hv-7">Quero este</a>
               </article>
             </div>
 
-            <div style={{ background: "var(--card)", border: "1px solid var(--line)", borderRadius: "22px", padding: "clamp(22px,2.6vw,34px)", display: "flex", flexWrap: "wrap", gap: "24px", alignItems: "center", justifyContent: "space-between" }}>
-              <div style={{ flex: "1 1 340px", minWidth: "0", display: "flex", flexDirection: "column", gap: "8px" }}>
-                <p style={{ margin: "0", fontSize: "11px", fontWeight: "800", letterSpacing: "0.16em", textTransform: "uppercase", color: "var(--accent)" }}>Add-on · acompanhamento processual</p>
-                <p style={{ margin: "0", fontSize: "15px", color: "var(--ink)", lineHeight: "1.6", maxWidth: "52ch", textWrap: "pretty" }}>Monitoramento, painel de movimentação e alerta de prazo, entregues ao escritório. Contratado junto de qualquer plano.</p>
-              </div>
-              <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
-                <div style={{ border: "1px solid var(--line)", borderRadius: "14px", padding: "12px 18px", display: "flex", flexDirection: "column", gap: "2px" }}><span style={{ fontSize: "18px", fontWeight: "800", color: "var(--ink)" }}>R$ 197</span><span style={{ fontSize: "11.5px", color: "var(--muted)" }}>até 150 processos</span></div>
-                <div style={{ border: "1px solid var(--line)", borderRadius: "14px", padding: "12px 18px", display: "flex", flexDirection: "column", gap: "2px" }}><span style={{ fontSize: "18px", fontWeight: "800", color: "var(--ink)" }}>R$ 397</span><span style={{ fontSize: "11.5px", color: "var(--muted)" }}>até 500 processos</span></div>
-                <div style={{ border: "1px solid var(--line)", borderRadius: "14px", padding: "12px 18px", display: "flex", flexDirection: "column", gap: "2px" }}><span style={{ fontSize: "18px", fontWeight: "800", color: "var(--ink)" }}>R$ 697</span><span style={{ fontSize: "11.5px", color: "var(--muted)" }}>até 1.500 processos</span></div>
-              </div>
-            </div>
-            <p style={{ margin: "0", fontSize: "12px", color: "var(--muted)" }}>Valores da tabela de lançamento, apresentada no workshop. Implantação orçada à parte conforme o escopo do escritório.</p>
+            <p style={{ margin: "0", fontSize: "12px", color: "var(--muted)" }}>Implantação, franquias, integrações e condições de contratação serão confirmadas na apresentação da oferta.</p>
           </div>
         </section>
 
@@ -348,9 +323,9 @@ export default function Inicio() {
             <div style={{ flex: "1 1 340px", minWidth: "min(100%,280px)", display: "flex", flexDirection: "column", gap: "20px" }}>
               <p style={{ margin: "0", fontSize: "11px", fontWeight: "700", letterSpacing: "0.22em", textTransform: "uppercase", color: "var(--amber)" }}>( workshop de lançamento )</p>
               <h2 style={{ margin: "0", fontWeight: "300", fontSize: "clamp(28px,3.8vw,52px)", lineHeight: "1.06", letterSpacing: "-0.03em", color: "#F1EEE0", textWrap: "pretty" }}>O sistema ao vivo, com quem construiu.</h2>
-              <p style={{ margin: "0", maxWidth: "44ch", color: "#BFC7BC", fontSize: "15px", lineHeight: "1.7", textWrap: "pretty" }}>Uma sessão fechada: o Ecos CRM rodando de verdade, a tabela na tela e condição de lançamento só para quem estiver na sala. Sem gravação e sem lista de espera infinita.</p>
+              <p style={{ margin: "0", maxWidth: "44ch", color: "#BFC7BC", fontSize: "15px", lineHeight: "1.7", textWrap: "pretty" }}>Estamos preparando uma apresentação do Ecos CRM com a equipe da Ecosflow. Entre na lista para receber informações sobre a data, o formato e a participação.</p>
               <div style={{ display: "flex", flexDirection: "column", gap: "10px", borderTop: "1px solid rgba(228,225,206,0.16)", paddingTop: "20px" }}>
-                <p style={{ margin: "0", fontSize: "13.5px", color: "#A8B2A6", lineHeight: "1.6" }}>Três perguntas no formulário. É o que precisamos para saber se o produto serve para você antes de qualquer conversa.</p>
+                <p style={{ margin: "0", fontSize: "13.5px", color: "#A8B2A6", lineHeight: "1.6" }}>Conte como funciona o atendimento do seu escritório para ajudar a orientar a apresentação.</p>
               </div>
             </div>
 

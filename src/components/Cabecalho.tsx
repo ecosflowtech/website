@@ -17,10 +17,10 @@ export function Cabecalho() {
           <span style={{ fontSize: "15px", fontWeight: "300", letterSpacing: "0.14em" }}>ecosflow</span>
         </Link>
         <span aria-hidden="true" style={{ width: "1px", height: "18px", background: "rgba(228,225,206,0.18)", flex: "none" }}></span>
-        <Link href="/#casa" style={link} className="hv-1">A casa</Link>
+        <Link href="/#casa" style={link} className="hv-1">A Ecosflow</Link>
         <Link href="/#crm" style={link} className="hv-1">Ecos CRM</Link>
         <Link href="/#demo" style={link} className="hv-1">O agente</Link>
-        <Link href="/#regras" style={link} className="hv-1">Regras</Link>
+        <Link href="/#regras" style={link} className="hv-1">Uso responsável</Link>
         <Link href="/#planos" style={link} className="hv-1">Planos</Link>
         <Link href="/academy" style={link} className="hv-1">Academy</Link>
         <Link href="/#workshop" style={{ flex: "none", background: "var(--accent)", color: "#F6F2E8", borderRadius: "999px", padding: "10px 18px", fontSize: "12.5px", fontWeight: "700", whiteSpace: "nowrap", transition: "background 0.3s" }} className="hv-2">Lista do workshop</Link>

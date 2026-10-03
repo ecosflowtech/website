@@ -20,10 +20,10 @@ const MENSAGENS = [
 /** `at`: a dimensão acende quando a conversa passa desta mensagem. */
 const DIMENSOES = [
   { letter: "D", name: "Dor", at: 4, score: 5, reason: "Perdeu duas campanhas no mês por causa da cláusula de exclusividade. Prejuízo declarado pela própria pessoa." },
-  { letter: "I", name: "Interesse", at: 2, score: 4, reason: "Procurou o escritório por conta própria e respondeu em menos de um minuto às duas perguntas." },
+  { letter: "I", name: "Interesse", at: 2, score: 4, reason: "Procurou o escritório por conta própria e respondeu às perguntas sobre a demanda." },
   { letter: "U", name: "Urgência", at: 4, score: 5, reason: "O prejuízo já está acontecendo — não é hipótese para os próximos meses." },
   { letter: "A", name: "Autoridade", at: 6, score: 5, reason: "Decide a contratação sozinha, sem sócio ou empresário no caminho." },
-  { letter: "D", name: "Disposição", at: 8, score: 3, reason: "Perguntou preço antes da reunião. Sensível a valor: a proposta deve abrir pelo escopo." },
+  { letter: "D", name: "Disposição", at: 8, score: 3, reason: "Perguntou pelo preço; ainda falta confirmar o orçamento disponível." },
 ] as const;
 
 const bolinha = { width: "6px", height: "6px", borderRadius: "50%", background: "#9DAC9F" } as const;
@@ -94,7 +94,7 @@ export function DemoDoAgente() {
           <div style={{ flex: "1 1 480px", minWidth: "0", display: "flex", flexDirection: "column", gap: "18px" }}>
             <p style={{ margin: "0", fontSize: "11px", fontWeight: "700", letterSpacing: "0.22em", textTransform: "uppercase", color: "#8A968B" }}>( o método )</p>
             <h2 style={{ margin: "0", fontWeight: "300", fontSize: "clamp(28px,3.8vw,54px)", lineHeight: "1.08", letterSpacing: "-0.03em", color: "#F1EEE0", textWrap: "pretty" }}>DIUAD: a nota vem com a razão escrita ao lado.</h2>
-            <p style={{ margin: "0", maxWidth: "52ch", color: "#A8B2A6", fontSize: "clamp(14px,1.1vw,16px)", lineHeight: "1.65", textWrap: "pretty" }}>Uma conversa real de qualificação, do jeito que ela acontece. Acompanhe a pontuação sendo construída à direita — Dor, Interesse, Urgência, Autoridade e Disposição, cada uma com a justificativa que o escritório pode contestar.</p>
+            <p style={{ margin: "0", maxWidth: "52ch", color: "#A8B2A6", fontSize: "clamp(14px,1.1vw,16px)", lineHeight: "1.65", textWrap: "pretty" }}>Demonstração ilustrativa com conversa, pessoa e pontuação fictícias. Veja como Dor, Interesse, Urgência, Autoridade e Disposição podem ajudar a organizar a qualificação de um contato.</p>
           </div>
           <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
             <button type="button" onClick={rever} style={{ background: "transparent", border: "1px solid rgba(228,225,206,0.3)", color: "#E4E1CE", borderRadius: "999px", padding: "10px 20px", fontSize: "13px", fontWeight: "700", cursor: "pointer", transition: "border-color 0.3s, background 0.3s" }} className="hv-5">↻ Rever do início</button>
@@ -110,7 +110,7 @@ export function DemoDoAgente() {
                 <p style={{ margin: "0", fontSize: "13.5px", fontWeight: "700", color: "#F1EEE0" }}>Bárbara Y.</p>
                 <p style={{ margin: "0", fontSize: "11px", color: "#8A968B" }}>WhatsApp do escritório · primeiro contato</p>
               </div>
-              <span style={{ marginLeft: "auto", display: "inline-flex", alignItems: "center", gap: "7px", fontFamily: "var(--font-mono)", fontSize: "10.5px", letterSpacing: "0.1em", color: "#8A968B", flex: "none" }}><span aria-hidden="true" style={{ width: "6px", height: "6px", borderRadius: "50%", background: "var(--accent)", animation: "softBlink 2s ease-in-out infinite" }}></span>AGENTE ATIVO</span>
+              <span style={{ marginLeft: "auto", display: "inline-flex", alignItems: "center", gap: "7px", fontFamily: "var(--font-mono)", fontSize: "10.5px", letterSpacing: "0.1em", color: "#8A968B", flex: "none" }}><span aria-hidden="true" style={{ width: "6px", height: "6px", borderRadius: "50%", background: "var(--accent)", animation: "softBlink 2s ease-in-out infinite" }}></span>SIMULAÇÃO</span>
             </div>
             <div style={{ flex: "1", display: "flex", flexDirection: "column", gap: "10px", padding: "18px", minHeight: "420px" }}>
               {mensagens.map((m, i) => (
@@ -185,7 +185,7 @@ export function DemoDoAgente() {
               </div>
             ) : null}
 
-            <p style={{ margin: "auto 0 0", fontSize: "10.5px", fontWeight: "700", letterSpacing: "0.14em", color: "#8A968B", lineHeight: "1.6" }}>MODO ASSISTIDO · O AGENTE PROPÕE, VOCÊ APROVA ANTES DE ENVIAR</p>
+            <p style={{ margin: "auto 0 0", fontSize: "10.5px", fontWeight: "700", letterSpacing: "0.14em", color: "#8A968B", lineHeight: "1.6" }}>EXEMPLO ILUSTRATIVO · A EQUIPE PODE REVISAR AS SUGESTÕES NO MODO ASSISTIDO</p>
           </div>
         </div>
 

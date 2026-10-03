@@ -3,10 +3,10 @@
 import { useState } from "react";
 
 const CAPACIDADES = [
-  { name: "tecnologia", title: "Tecnologia", text: "Uma base só: dados, produto e infraestrutura que sustentam qualquer produto novo da casa sem recomeçar do zero." },
-  { name: "automação", title: "Automação", text: "Automatiza o que é ruído e preserva o que é relação. Cada fluxo tem propósito declarado e um humano por perto quando importa." },
-  { name: "explicação", title: "Explicação", text: "Toda decisão da IA vem com a razão escrita, o log e a possibilidade de correção manual. É o que separa método de caixa-preta." },
-  { name: "proximidade", title: "Proximidade", text: "Quem atende quando quebra é quem construiu. Enquanto isso for verdade, é o que entregamos melhor que empresa grande." },
+  { name: "tecnologia", title: "Tecnologia", text: "Desenvolvemos software a partir das necessidades observadas na operação e evoluímos os produtos com o uso." },
+  { name: "automação", title: "Automação", text: "Usamos automação para apoiar tarefas repetitivas e ajudar a equipe a acompanhar o atendimento." },
+  { name: "explicação", title: "Explicação", text: "No Ecos CRM, a qualificação DIUAD registra justificativas que ajudam a equipe a entender e revisar a avaliação do contato." },
+  { name: "proximidade", title: "Proximidade", text: "A experiência de quem usa os produtos orienta as prioridades e as melhorias da Ecosflow." },
 ] as const;
 
 const orbita = { transformBox: "fill-box", transformOrigin: "center", animation: "spinBack 52s linear infinite" } as const;
@@ -23,7 +23,7 @@ export function Capacidades() {
         <div style={{ flex: "1 1 380px", minWidth: "min(100%,300px)", display: "flex", flexDirection: "column", gap: "20px" }}>
           <p style={{ margin: "0", fontSize: "11px", fontWeight: "700", letterSpacing: "0.22em", textTransform: "uppercase", color: "#8A968B" }}>( visão )</p>
           <h2 style={{ margin: "0", fontWeight: "300", fontSize: "clamp(28px,3.8vw,54px)", lineHeight: "1.06", letterSpacing: "-0.03em", color: "#F1EEE0", textWrap: "pretty" }}>O produto é o começo da casa.</h2>
-          <p style={{ margin: "0", maxWidth: "48ch", color: "#A8B2A6", fontSize: "clamp(14px,1.1vw,16px)", lineHeight: "1.65", textWrap: "pretty" }}>Quatro capacidades sustentam tudo que a Ecosflow vai construir depois do CRM. Clique para ver cada uma.</p>
+          <p style={{ margin: "0", maxWidth: "48ch", color: "#A8B2A6", fontSize: "clamp(14px,1.1vw,16px)", lineHeight: "1.65", textWrap: "pretty" }}>Conheça os princípios que orientam o desenvolvimento dos produtos da Ecosflow.</p>
           <div role="tablist" aria-label="Capacidades da casa" style={{ display: "flex", gap: "9px", flexWrap: "wrap" }}>
             {CAPACIDADES.map((c, i) => {
               const ativa = escolhida === i;
