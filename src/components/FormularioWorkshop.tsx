@@ -44,7 +44,7 @@ export function FormularioWorkshop() {
       <div style={{ display: "flex", flexDirection: "column", gap: "14px", padding: "20px 0", animation: "revealUp 0.6s cubic-bezier(0.19,0.7,0.16,1) both" }}>
         <span aria-hidden="true" style={{ width: "54px", height: "54px", borderRadius: "50%", background: "var(--pine)", color: "var(--paper)", display: "grid", placeItems: "center", fontSize: "22px" }}>✓</span>
         <h3 style={{ margin: "0", fontSize: "23px", fontWeight: "700", color: "var(--ink)", letterSpacing: "-0.02em" }}>Inscrição registrada.</h3>
-        <p style={{ margin: "0", color: "var(--muted)", fontSize: "15px", lineHeight: "1.65", textWrap: "pretty" }}>Seu interesse ficou registrado. Quando a programação estiver definida, usaremos o contato informado para enviar os detalhes do workshop.</p>
+        <p style={{ margin: "0", color: "var(--muted)", fontSize: "15px", lineHeight: "1.65", textWrap: "pretty" }}>Quando a data do workshop sair, mandamos os detalhes pelo contato que você deixou.</p>
       </div>
     );
   }
@@ -87,7 +87,7 @@ export function FormularioWorkshop() {
         <p role="alert" style={{ margin: "0", fontSize: "13.5px", color: "var(--accent)", lineHeight: "1.55" }}>{estado.mensagem}</p>
       ) : null}
       <button type="submit" disabled={enviando} style={{ marginTop: "4px", display: "inline-flex", alignItems: "center", justifyContent: "center", gap: "12px", background: "var(--accent)", color: "#F6F2E8", border: "none", cursor: enviando ? "wait" : "pointer", opacity: enviando ? "0.7" : "1", borderRadius: "999px", padding: "15px 24px", fontSize: "14.5px", fontWeight: "700", transition: "background 0.3s, gap 0.35s cubic-bezier(0.22,1,0.36,1)" }} className="hv-9">{enviando ? "Registrando…" : "Entrar na lista do workshop"}<span aria-hidden="true">→</span></button>
-      <p style={{ margin: "0", fontSize: "11.5px", color: "var(--muted)", lineHeight: "1.6" }}>Os dados informados serão usados para organizar o workshop e enviar informações sobre a participação.</p>
+      <p style={{ margin: "0", fontSize: "11.5px", color: "var(--muted)", lineHeight: "1.6" }}>Usamos esses dados só para organizar o workshop e falar com você sobre ele.</p>
     </form>
   );
 }

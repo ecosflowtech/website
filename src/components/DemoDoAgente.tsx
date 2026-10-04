@@ -21,7 +21,7 @@ const MENSAGENS = [
 const DIMENSOES = [
   { letter: "D", name: "Dor", at: 4, score: 5, reason: "Perdeu duas campanhas no mês por causa da cláusula de exclusividade. Prejuízo declarado pela própria pessoa." },
   { letter: "I", name: "Interesse", at: 2, score: 4, reason: "Procurou o escritório por conta própria e respondeu às perguntas sobre a demanda." },
-  { letter: "U", name: "Urgência", at: 4, score: 5, reason: "O prejuízo já está acontecendo — não é hipótese para os próximos meses." },
+  { letter: "U", name: "Urgência", at: 4, score: 5, reason: "O prejuízo já está acontecendo, desde este mês." },
   { letter: "A", name: "Autoridade", at: 6, score: 5, reason: "Decide a contratação sozinha, sem sócio ou empresário no caminho." },
   { letter: "D", name: "Disposição", at: 8, score: 3, reason: "Perguntou pelo preço; ainda falta confirmar o orçamento disponível." },
 ] as const;
@@ -94,7 +94,7 @@ export function DemoDoAgente() {
           <div style={{ flex: "1 1 480px", minWidth: "0", display: "flex", flexDirection: "column", gap: "18px" }}>
             <p style={{ margin: "0", fontSize: "11px", fontWeight: "700", letterSpacing: "0.22em", textTransform: "uppercase", color: "#8A968B" }}>( o método )</p>
             <h2 style={{ margin: "0", fontWeight: "300", fontSize: "clamp(28px,3.8vw,54px)", lineHeight: "1.08", letterSpacing: "-0.03em", color: "#F1EEE0", textWrap: "pretty" }}>DIUAD: a nota vem com a razão escrita ao lado.</h2>
-            <p style={{ margin: "0", maxWidth: "52ch", color: "#A8B2A6", fontSize: "clamp(14px,1.1vw,16px)", lineHeight: "1.65", textWrap: "pretty" }}>Demonstração ilustrativa com conversa, pessoa e pontuação fictícias. Veja como Dor, Interesse, Urgência, Autoridade e Disposição podem ajudar a organizar a qualificação de um contato.</p>
+            <p style={{ margin: "0", maxWidth: "52ch", color: "#A8B2A6", fontSize: "clamp(14px,1.1vw,16px)", lineHeight: "1.65", textWrap: "pretty" }}>Demonstração com conversa, pessoa e notas fictícias. Veja como Dor, Interesse, Urgência, Autoridade e Disposição ajudam a qualificar um contato.</p>
           </div>
           <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
             <button type="button" onClick={rever} style={{ background: "transparent", border: "1px solid rgba(228,225,206,0.3)", color: "#E4E1CE", borderRadius: "999px", padding: "10px 20px", fontSize: "13px", fontWeight: "700", cursor: "pointer", transition: "border-color 0.3s, background 0.3s" }} className="hv-5">↻ Rever do início</button>
@@ -189,7 +189,7 @@ export function DemoDoAgente() {
           </div>
         </div>
 
-        <p style={{ margin: "0", textAlign: "center", fontFamily: "var(--font-serif)", fontStyle: "italic", fontSize: "clamp(20px,2.6vw,36px)", color: "#F1EEE0", lineHeight: "1.25" }}>A IA pontua e explica. Quem decide é sempre o escritório.</p>
+        <p style={{ margin: "0", textAlign: "center", fontFamily: "var(--font-serif)", fontStyle: "italic", fontSize: "clamp(20px,2.6vw,36px)", color: "#F1EEE0", lineHeight: "1.25" }}>A IA dá a nota e explica o motivo; a decisão fica com o escritório.</p>
       </div>
     </section>
   );

@@ -5,7 +5,7 @@ import { cadastroAberto, enderecoDoCrm } from "@/lib/enderecos";
 
 export const metadata: Metadata = {
   title: "Entrar no Ecos CRM · Ecosflow",
-  description: "Acesso ao Ecos CRM para escritórios clientes, e o cadastro de escritórios novos.",
+  description: "Entrada no Ecos CRM para quem já é cliente e cadastro para escritórios novos.",
 };
 
 // Endereço do CRM e abertura do cadastro vêm do ambiente na hora do pedido.
@@ -57,12 +57,12 @@ export default function Entrar() {
               <h2 style={{ margin: "0", fontSize: "clamp(26px,2.6vw,36px)", fontWeight: "700", letterSpacing: "-0.03em", color: "var(--ink)" }}>Criar conta</h2>
               {aberto ? (
                 <>
-                  <p style={{ margin: "0", color: "var(--muted)", fontSize: "15px", lineHeight: "1.7", maxWidth: "40ch", textWrap: "pretty" }}>Crie o acesso do escritório, escolha o plano e faça a assinatura no próprio cadastro.</p>
+                  <p style={{ margin: "0", color: "var(--muted)", fontSize: "15px", lineHeight: "1.7", maxWidth: "40ch", textWrap: "pretty" }}>Crie o acesso do escritório e escolha o plano no próprio cadastro.</p>
                   <a href={`${crm}/register`} style={{ ...botaoEscuro, marginTop: "auto" }} className="hv-2">Criar conta do escritório<span aria-hidden="true" style={seta}>→</span></a>
                 </>
               ) : (
                 <>
-                  <p style={{ margin: "0", color: "var(--muted)", fontSize: "15px", lineHeight: "1.7", maxWidth: "40ch", textWrap: "pretty" }}>O cadastro de escritórios novos abre depois do workshop de lançamento. Entre na lista para receber o convite e a condição de lançamento.</p>
+                  <p style={{ margin: "0", color: "var(--muted)", fontSize: "15px", lineHeight: "1.7", maxWidth: "40ch", textWrap: "pretty" }}>O cadastro de escritórios novos abre depois do workshop. Entre na lista para receber o convite e a condição de lançamento.</p>
                   <Link href="/#workshop" style={{ ...botaoEscuro, marginTop: "auto" }} className="hv-2">Entrar na lista do workshop<span aria-hidden="true" style={seta}>→</span></Link>
                 </>
               )}
@@ -70,7 +70,7 @@ export default function Entrar() {
           </div>
 
           <div style={{ borderTop: "1px solid var(--line)", paddingTop: "clamp(22px,2.6vw,32px)", display: "flex", flexWrap: "wrap", gap: "14px 32px", alignItems: "center", justifyContent: "space-between" }}>
-            <p style={{ margin: "0", color: "var(--muted)", fontSize: "15px", lineHeight: "1.65", maxWidth: "56ch", textWrap: "pretty" }}>A Ecosflow Academy reúne trilhas de onboarding para orientar os primeiros passos no Ecos CRM.</p>
+            <p style={{ margin: "0", color: "var(--muted)", fontSize: "15px", lineHeight: "1.65", maxWidth: "56ch", textWrap: "pretty" }}>A Ecosflow Academy tem trilhas de onboarding para quem está começando no Ecos CRM.</p>
             <Link href="/academy" style={{ display: "inline-flex", alignItems: "center", gap: "9px", fontSize: "14px", fontWeight: "700", color: "var(--ink)", transition: "gap 0.3s" }} className="hv-4">Ir para a Academy <span aria-hidden="true">→</span></Link>
           </div>
         </div>

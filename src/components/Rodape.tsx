@@ -14,7 +14,7 @@ export function Rodape() {
               <img src="/logo-mark.png" alt="Ecosflow" style={{ width: "38px", height: "38px", objectFit: "contain", filter: "invert(1)" }} />
               <span style={{ fontSize: "19px", fontWeight: "300", letterSpacing: "0.16em", color: "#E4E1CE" }}>ecosflow</span>
             </div>
-            <p style={{ margin: "0", maxWidth: "40ch", fontSize: "14px", lineHeight: "1.65", color: "#8A968B" }}>Empresa de software, automação e inteligência artificial. Criadora do Ecos CRM e da Ecosflow Academy, nossa frente de aprendizagem.</p>
+            <p style={{ margin: "0", maxWidth: "40ch", fontSize: "14px", lineHeight: "1.65", color: "#8A968B" }}>Empresa de software e automação com IA. Faz o Ecos CRM e a Ecosflow Academy.</p>
           </div>
           <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
             <p style={titulo}>Navegar</p>
@@ -38,7 +38,7 @@ export function Rodape() {
         </div>
         <div style={{ borderTop: "1px solid rgba(228,225,206,0.1)", paddingTop: "22px", display: "flex", flexWrap: "wrap", gap: "14px 32px", justifyContent: "space-between" }}>
           <p style={{ margin: "0", fontSize: "12px", color: "#8A968B" }}>© 2026 Ecosflow. Todos os direitos reservados.</p>
-          <p style={{ margin: "0", fontSize: "12px", color: "#8A968B", maxWidth: "62ch", textWrap: "pretty" }}>Ecosflow desenvolve tecnologia para atendimento e gestão. Ecos CRM é seu produto SaaS de atendimento pelo WhatsApp.</p>
+          <p style={{ margin: "0", fontSize: "12px", color: "#8A968B", maxWidth: "62ch", textWrap: "pretty" }}>O Ecos CRM é um produto da Ecosflow.</p>
         </div>
       </div>
     </footer>

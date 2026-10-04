@@ -23,8 +23,6 @@ input, select, button, textarea { font-family: inherit; }
 ::selection { background: #B8401C; color: #F6F2E8; }
 @keyframes revealUp { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: none; } }
 @keyframes revealSoft { from { opacity: 0; } to { opacity: 1; } }
-@keyframes radarRing { 0% { transform: scale(0.18); opacity: 0.8; } 100% { transform: scale(1); opacity: 0; } }
-@keyframes radarSweep { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 @keyframes softBlink { 0%, 100% { opacity: 1; } 50% { opacity: 0.18; } }
 @keyframes spinSlow { to { transform: rotate(360deg); } }
 @keyframes spinBack { to { transform: rotate(-360deg); } }

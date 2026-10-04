@@ -6,7 +6,7 @@ import { enderecoDaAcademy } from "@/lib/enderecos";
 
 export const metadata: Metadata = {
   title: "Academy · Ecosflow",
-  description: "A área de aprendizagem da Ecosflow, com onboarding para usuários do Ecos CRM.",
+  description: "Trilhas de onboarding da Ecosflow para quem usa o Ecos CRM.",
 };
 
 // O endereço da Academy vem do ambiente na hora do pedido.
@@ -28,7 +28,7 @@ export default function Academy() {
             rotulo="( academy )"
             titulo="Aprender a usar, no seu ritmo."
             subtitulo="A Academy está em preparação."
-            texto="Estamos preparando a área de aprendizagem da Ecosflow, com conteúdo para orientar os primeiros passos dos usuários no Ecos CRM."
+            texto="Estamos montando as primeiras trilhas, para quem está começando no Ecos CRM."
           />
           <div style={{ display: "flex", flexWrap: "wrap", gap: "12px", alignItems: "center" }}>
             <Link href="/entrar" style={{ display: "inline-flex", alignItems: "center", gap: "12px", background: "var(--ink)", color: "var(--paper)", borderRadius: "999px", padding: "7px 7px 7px 22px", fontSize: "14px", fontWeight: "700", transition: "gap 0.35s cubic-bezier(0.22,1,0.36,1), background 0.3s" }} className="hv-2">Entrar no Ecos CRM<span aria-hidden="true" style={{ width: "36px", height: "36px", borderRadius: "50%", background: "var(--accent)", color: "#F6F2E8", display: "grid", placeItems: "center", fontSize: "15px" }}>→</span></Link>

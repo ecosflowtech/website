@@ -16,9 +16,9 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "Ecosflow — software, automação e inteligência artificial",
+  title: "Ecosflow · software e automação com IA",
   description:
-    "Conheça a Ecosflow, empresa de software e automação, e o Ecos CRM, seu SaaS de atendimento pelo WhatsApp e gestão comercial.",
+    "A Ecosflow faz software de atendimento. O Ecos CRM, primeiro produto da casa, organiza o WhatsApp e o funil comercial de escritórios de advocacia.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
