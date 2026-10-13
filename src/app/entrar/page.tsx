@@ -61,10 +61,7 @@ export default function Entrar() {
                   <a href={`${crm}/register`} style={{ ...botaoEscuro, marginTop: "auto" }} className="hv-2">Criar conta do escritório<span aria-hidden="true" style={seta}>→</span></a>
                 </>
               ) : (
-                <>
-                  <p style={{ margin: "0", color: "var(--muted)", fontSize: "15px", lineHeight: "1.7", maxWidth: "40ch", textWrap: "pretty" }}>O cadastro de escritórios novos abre depois do workshop. Entre na lista para receber o convite e a condição de lançamento.</p>
-                  <Link href="/#workshop" style={{ ...botaoEscuro, marginTop: "auto" }} className="hv-2">Entrar na lista do workshop<span aria-hidden="true" style={seta}>→</span></Link>
-                </>
+                <p style={{ margin: "0", color: "var(--muted)", fontSize: "15px", lineHeight: "1.7", maxWidth: "40ch", textWrap: "pretty" }}>O cadastro de escritórios novos ainda não abriu.</p>
               )}
             </article>
           </div>

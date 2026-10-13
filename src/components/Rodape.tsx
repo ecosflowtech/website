@@ -31,8 +31,7 @@ export function Rodape() {
           </div>
           <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
             <p style={titulo}>Contato</p>
-
-            <Link href="/#workshop" style={link} className="hv-10">Lista do workshop</Link>
+            <a href="mailto:ecosflowtech@gmail.com" style={link} className="hv-10">ecosflowtech@gmail.com</a>
             <span style={{ fontSize: "14px", color: "#8A968B" }}>São Paulo, Brasil</span>
           </div>
         </div>

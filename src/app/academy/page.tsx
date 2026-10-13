@@ -31,9 +31,7 @@ export default function Academy() {
             texto="Estamos montando as primeiras trilhas, para quem está começando no Ecos CRM."
           />
           <div style={{ display: "flex", flexWrap: "wrap", gap: "12px", alignItems: "center" }}>
-            <Link href="/entrar" style={{ display: "inline-flex", alignItems: "center", gap: "12px", background: "var(--ink)", color: "var(--paper)", borderRadius: "999px", padding: "7px 7px 7px 22px", fontSize: "14px", fontWeight: "700", transition: "gap 0.35s cubic-bezier(0.22,1,0.36,1), background 0.3s" }} className="hv-2">Entrar no Ecos CRM<span aria-hidden="true" style={{ width: "36px", height: "36px", borderRadius: "50%", background: "var(--accent)", color: "#F6F2E8", display: "grid", placeItems: "center", fontSize: "15px" }}>→</span></Link>
-            <Link href="/#workshop" style={{ border: "1px solid var(--ink)", color: "var(--ink)", borderRadius: "999px", padding: "13px 22px", fontSize: "14px", fontWeight: "700", transition: "background 0.3s, color 0.3s" }} className="hv-7">Lista do workshop</Link>
-          </div>
+            <Link href="/entrar" style={{ display: "inline-flex", alignItems: "center", gap: "12px", background: "var(--ink)", color: "var(--paper)", borderRadius: "999px", padding: "7px 7px 7px 22px", fontSize: "14px", fontWeight: "700", transition: "gap 0.35s cubic-bezier(0.22,1,0.36,1), background 0.3s" }} className="hv-2">Entrar no Ecos CRM<span aria-hidden="true" style={{ width: "36px", height: "36px", borderRadius: "50%", background: "var(--accent)", color: "#F6F2E8", display: "grid", placeItems: "center", fontSize: "15px" }}>→</span></Link>          </div>
         </div>
       </main>
     </Moldura>

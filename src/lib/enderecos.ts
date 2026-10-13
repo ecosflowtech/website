@@ -18,7 +18,17 @@ export function enderecoDaAcademy() {
   return semBarraFinal(process.env.ACADEMY_URL);
 }
 
-/** Fechado até o lançamento: o cadastro de escritório novo abre depois do workshop. */
+/** Cadastro de escritório novo pelo site, ligado no lançamento. */
 export function cadastroAberto() {
   return process.env.CADASTRO_ABERTO === "true";
+}
+
+/**
+ * Onde o escritório novo cria a conta: o /register do CRM, com o cadastro
+ * aberto. Fechado, ou sem o endereço do CRM, os botões levam a /entrar, que
+ * explica o estado.
+ */
+export function enderecoDoCadastro() {
+  const crm = enderecoDoCrm();
+  return crm && cadastroAberto() ? `${crm}/register` : null;
 }

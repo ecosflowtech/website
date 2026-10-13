@@ -25,6 +25,9 @@ for (const route of ['entrar', 'academy']) {
 const destinations = {
   // Academy Worker published on 03/10/2026; a Cloudflare build variable overrides it.
   ACADEMY_URL: process.env.ACADEMY_URL || 'https://ecosflow-academy.ecosflowtech.workers.dev',
+  // SaaS CRM on AWS; signup opened at launch, without the workshop. Build variables override both.
+  CRM_URL: process.env.CRM_URL || 'https://crm.atryatech.com.br',
+  CADASTRO_ABERTO: process.env.CADASTRO_ABERTO || 'true',
 };
 await writeFile(path.join(stage, 'next.config.mjs'), `export default {
   output: 'export', trailingSlash: true, poweredByHeader: false,

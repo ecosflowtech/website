@@ -1,16 +1,18 @@
 import Link from "next/link";
 import { Capacidades } from "@/components/Capacidades";
 import { DemoDoAgente } from "@/components/DemoDoAgente";
-import { FormularioWorkshop } from "@/components/FormularioWorkshop";
 import { Moldura } from "@/components/Moldura";
 import { MotorDaAbertura } from "@/components/MotorDaAbertura";
+import { enderecoDoCadastro } from "@/lib/enderecos";
 
 /**
  * Página inicial, convertida de design/Ecosflow.dc.html. A marcação e os
- * estilos são os do design; o que mexe (abertura, demonstração, abas e
- * formulário) mora nos componentes.
+ * estilos são os do design; o que mexe (abertura, demonstração e abas) mora
+ * nos componentes. Os botões de assinatura levam ao cadastro do CRM.
  */
 export default function Inicio() {
+  const cadastro = enderecoDoCadastro();
+
   return (
     <Moldura>
       <main>
@@ -32,7 +34,7 @@ export default function Inicio() {
                     <div data-hero-side style={{ flex: "1 1 300px", minWidth: "min(100%,280px)", maxWidth: "420px", display: "flex", flexDirection: "column", gap: "18px", paddingBottom: "6px", animation: "revealUp 1s cubic-bezier(0.19,0.7,0.16,1) 0.2s both" }}>
                       <p style={{ margin: "0", color: "#BFC7BC", fontSize: "clamp(14px,1.1vw,16px)", lineHeight: "1.65", textWrap: "pretty" }}>A Ecosflow faz software para atendimento e vendas. O primeiro produto é o Ecos CRM, que junta o WhatsApp do escritório e os contatos numa tela só, com automações de IA. Ele nasceu na rotina de um escritório de advocacia.</p>
                       <div style={{ display: "flex", flexWrap: "wrap", gap: "12px", alignItems: "center" }}>
-                        <a href="#workshop" style={{ display: "inline-flex", alignItems: "center", gap: "12px", background: "#E7E3D3", color: "#0F1A15", borderRadius: "999px", padding: "7px 7px 7px 22px", fontSize: "14px", fontWeight: "700", transition: "gap 0.35s cubic-bezier(0.22,1,0.36,1), background 0.3s" }} className="hv-3">Entrar na lista do workshop<span aria-hidden="true" style={{ width: "36px", height: "36px", borderRadius: "50%", background: "var(--accent)", color: "#F6F2E8", display: "grid", placeItems: "center", fontSize: "15px" }}>→</span></a>
+                        <a href={cadastro ?? "/entrar"} style={{ display: "inline-flex", alignItems: "center", gap: "12px", background: "#E7E3D3", color: "#0F1A15", borderRadius: "999px", padding: "7px 7px 7px 22px", fontSize: "14px", fontWeight: "700", transition: "gap 0.35s cubic-bezier(0.22,1,0.36,1), background 0.3s" }} className="hv-3">{cadastro ? "Testar grátis por 14 dias" : "Entrar no Ecos CRM"}<span aria-hidden="true" style={{ width: "36px", height: "36px", borderRadius: "50%", background: "var(--accent)", color: "#F6F2E8", display: "grid", placeItems: "center", fontSize: "15px" }}>→</span></a>
                       </div>
                       <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
                         <span style={{ border: "1px solid rgba(228,225,206,0.22)", borderRadius: "999px", padding: "6px 13px", fontSize: "11.5px", fontWeight: "600", color: "#BFC7BC" }}>Ecos CRM em uso em um escritório</span>
@@ -254,7 +256,7 @@ export default function Inicio() {
                 <p style={{ margin: "0", fontSize: "11px", fontWeight: "700", letterSpacing: "0.22em", textTransform: "uppercase", color: "var(--muted)" }}>( planos )</p>
                 <h2 style={{ margin: "0", fontWeight: "300", fontSize: "clamp(28px,3.8vw,54px)", lineHeight: "1.06", letterSpacing: "-0.03em", color: "var(--ink)" }}>Planos do Ecos CRM.</h2>
               </div>
-              <p style={{ flex: "0 1 380px", minWidth: "260px", margin: "0", color: "var(--muted)", fontSize: "14.5px", lineHeight: "1.65" }}>Valores previstos da assinatura mensal. A contratação ainda não abriu; limites de uso e condições saem antes da abertura do cadastro.</p>
+              <p style={{ flex: "0 1 380px", minWidth: "260px", margin: "0", color: "var(--muted)", fontSize: "14.5px", lineHeight: "1.65" }}>Assinatura mensal ou anual. Os primeiros 14 dias são grátis, e dá para cancelar quando quiser, sem multa.</p>
             </div>
 
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(min(100%,270px),1fr))", gap: "14px", alignItems: "start" }}>
@@ -270,7 +272,7 @@ export default function Inicio() {
                   <p style={{ margin: "0", fontSize: "13.5px", color: "var(--ink)", lineHeight: "1.5" }}>1 linha de WhatsApp e 1 atendente</p>
                   <p style={{ margin: "0", fontSize: "13.5px", color: "var(--ink)", lineHeight: "1.5" }}>Histórico de 30 dias</p>
                 </div>
-                <a href="#workshop" style={{ marginTop: "auto", textAlign: "center", border: "1px solid var(--ink)", color: "var(--ink)", borderRadius: "999px", padding: "13px 22px", fontSize: "13.5px", fontWeight: "700", transition: "background 0.3s, color 0.3s" }} className="hv-7">Quero este</a>
+                <a href={cadastro ?? "/entrar"} style={{ marginTop: "auto", textAlign: "center", border: "1px solid var(--ink)", color: "var(--ink)", borderRadius: "999px", padding: "13px 22px", fontSize: "13.5px", fontWeight: "700", transition: "background 0.3s, color 0.3s" }} className="hv-7">Quero este</a>
               </article>
 
               <article style={{ background: "var(--pine)", color: "var(--bone)", border: "1px solid var(--pine)", borderRadius: "22px", padding: "clamp(24px,2.6vw,34px)", display: "flex", flexDirection: "column", gap: "18px", boxShadow: "0 30px 60px -40px rgba(12,42,32,0.8)" }}>
@@ -285,7 +287,7 @@ export default function Inicio() {
                   <p style={{ margin: "0", fontSize: "13.5px", color: "#E4E1CE", lineHeight: "1.5" }}>1 linha de WhatsApp e 3 atendentes</p>
                   <p style={{ margin: "0", fontSize: "13.5px", color: "#E4E1CE", lineHeight: "1.5" }}>Base de documentos para a IA</p>
                 </div>
-                <a href="#workshop" style={{ marginTop: "auto", textAlign: "center", background: "#E7E3D3", color: "#0F1A15", borderRadius: "999px", padding: "13px 22px", fontSize: "13.5px", fontWeight: "700", transition: "background 0.3s" }} className="hv-8">Quero este</a>
+                <a href={cadastro ?? "/entrar"} style={{ marginTop: "auto", textAlign: "center", background: "#E7E3D3", color: "#0F1A15", borderRadius: "999px", padding: "13px 22px", fontSize: "13.5px", fontWeight: "700", transition: "background 0.3s" }} className="hv-8">Quero este</a>
               </article>
 
               <article style={{ background: "var(--card)", border: "1px solid var(--line)", borderRadius: "22px", padding: "clamp(24px,2.6vw,34px)", display: "flex", flexDirection: "column", gap: "18px" }}>
@@ -300,32 +302,15 @@ export default function Inicio() {
                   <p style={{ margin: "0", fontSize: "13.5px", color: "var(--ink)", lineHeight: "1.5" }}>2 linhas de WhatsApp e 8 atendentes</p>
                   <p style={{ margin: "0", fontSize: "13.5px", color: "var(--ink)", lineHeight: "1.5" }}>Base de documentos para a IA</p>
                 </div>
-                <a href="#workshop" style={{ marginTop: "auto", textAlign: "center", border: "1px solid var(--ink)", color: "var(--ink)", borderRadius: "999px", padding: "13px 22px", fontSize: "13.5px", fontWeight: "700", transition: "background 0.3s, color 0.3s" }} className="hv-7">Quero este</a>
+                <a href={cadastro ?? "/entrar"} style={{ marginTop: "auto", textAlign: "center", border: "1px solid var(--ink)", color: "var(--ink)", borderRadius: "999px", padding: "13px 22px", fontSize: "13.5px", fontWeight: "700", transition: "background 0.3s, color 0.3s" }} className="hv-7">Quero este</a>
               </article>
             </div>
 
-            <p style={{ margin: "0", fontSize: "12px", color: "var(--muted)" }}>Implantação, franquias, integrações e condições de contratação são confirmadas quando a oferta for apresentada.</p>
+            <p style={{ margin: "0", fontSize: "12px", color: "var(--muted)" }}>No plano anual, pago de uma vez, o mês sai por R$ 247, R$ 497 e R$ 997. A mensagem que passar da franquia do mês pode ser cobrada à parte: R$ 0,10 no Base, R$ 0,08 no Operação e R$ 0,06 no Escala.</p>
           </div>
         </section>
 
         <Capacidades />
-
-        <section id="workshop" data-screen-label="Workshop" style={{ position: "relative", zIndex: "2", background: "var(--pine)", padding: "clamp(80px,11vw,150px) clamp(20px,4.5vw,64px)" }}>
-          <div style={{ maxWidth: "1080px", margin: "0 auto", display: "flex", flexWrap: "wrap", gap: "clamp(32px,5vw,64px)", alignItems: "flex-start" }}>
-            <div style={{ flex: "1 1 340px", minWidth: "min(100%,280px)", display: "flex", flexDirection: "column", gap: "20px" }}>
-              <p style={{ margin: "0", fontSize: "11px", fontWeight: "700", letterSpacing: "0.22em", textTransform: "uppercase", color: "var(--amber)" }}>( workshop de lançamento )</p>
-              <h2 style={{ margin: "0", fontWeight: "300", fontSize: "clamp(28px,3.8vw,52px)", lineHeight: "1.06", letterSpacing: "-0.03em", color: "#F1EEE0", textWrap: "pretty" }}>O sistema ao vivo, com quem construiu.</h2>
-              <p style={{ margin: "0", maxWidth: "44ch", color: "#BFC7BC", fontSize: "15px", lineHeight: "1.7", textWrap: "pretty" }}>Vamos mostrar o Ecos CRM funcionando, com quem o construiu. Entre na lista para saber a data e como participar.</p>
-              <div style={{ display: "flex", flexDirection: "column", gap: "10px", borderTop: "1px solid rgba(228,225,206,0.16)", paddingTop: "20px" }}>
-                <p style={{ margin: "0", fontSize: "13.5px", color: "#A8B2A6", lineHeight: "1.6" }}>Conte como é o atendimento no seu escritório. Isso ajuda a montar a apresentação.</p>
-              </div>
-            </div>
-
-            <div style={{ flex: "1 1 400px", minWidth: "min(100%,290px)", background: "var(--paper)", borderRadius: "24px", padding: "clamp(24px,3vw,40px)" }}>
-              <FormularioWorkshop />
-            </div>
-          </div>
-        </section>
       </main>
       <MotorDaAbertura />
     </Moldura>
